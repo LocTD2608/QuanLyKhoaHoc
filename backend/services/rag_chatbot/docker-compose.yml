@@ -1,0 +1,60 @@
+###############################################################################
+#  Qdrant Stack — RAG Chatbot (legal_data)
+#
+#  Khởi chạy:
+#    docker compose up -d
+#
+#  Dừng:
+#    docker compose down
+#
+#  Dashboard (Web UI):
+#    http://localhost:6333/dashboard
+#
+#  RAM ceiling: 4 GB — điều chỉnh mem_limit nếu máy có ít RAM hơn
+###############################################################################
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.16.2
+    container_name: qdrant_legal
+    restart: unless-stopped
+
+    ports:
+      # REST API + Web Dashboard
+      - "6333:6333"
+      # gRPC (tuỳ chọn — dùng khi cần throughput cao)
+      - "6334:6334"
+
+    volumes:
+      # Persistent storage — data sẽ không mất khi restart container
+      - qdrant_legal_data:/qdrant/storage
+
+    environment:
+      # Tắt telemetry
+      QDRANT__TELEMETRY_DISABLED: "true"
+      # Cho phép CORS từ mọi origin (chỉ dùng cho dev)
+      QDRANT__SERVICE__CORS_ALLOWED_ORIGINS: "*"
+      # Giới hạn số thread để tránh CPU spike trong lúc index
+      QDRANT__CPU__THREADS_PER_COLLECTION: "2"
+
+    deploy:
+      resources:
+        limits:
+          # === Giới hạn RAM 4 GB ===
+          # Tăng lên 6g/8g nếu index tập dữ liệu lớn (> 100k vectors)
+          memory: 4G
+        reservations:
+          memory: 512M
+
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -sf http://localhost:6333/healthz || exit 1" ]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+###############################################################################
+
+volumes:
+  qdrant_legal_data:
+    driver: local

@@ -1,0 +1,550 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "role": "admin",
+      "author_id": 1
+    },
+    {
+      "id": 2,
+      "username": "lead1",
+      "password": "lead123",
+      "role": "lead",
+      "author_id": 2
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Nguyễn Văn An",
+      "email": "nvan@ptit.edu.vn",
+      "affiliation": "Học viện Công nghệ Bưu chính Viễn thông",
+      "is_member": true,
+      "group_type": "NCS",
+      "member_role": "GV",
+      "created_at": "2024-01-01T00:00:00",
+      "academic_field": "Công nghệ thông tin",
+      "scholar_id": "2072354336",
+      "scholar_citations": 28,
+      "scholar_h_index": 3,
+      "scholar_i10_index": 2,
+      "scholar_last_synced": "2026-06-26T13:11:32"
+    },
+    {
+      "id": 2,
+      "name": "Trần Thị Bình",
+      "email": "ttbinh@ptit.edu.vn",
+      "affiliation": "Học viện Công nghệ Bưu chính Viễn thông",
+      "is_member": true,
+      "group_type": "NCKH",
+      "member_role": "TS",
+      "academic_field": "Trí tuệ nhân tạo",
+      "created_at": "2024-01-02T00:00:00"
+    },
+    {
+      "id": 3,
+      "name": "Lê Văn Cường",
+      "email": "lvcuong@hust.edu.vn",
+      "affiliation": "Đại học Bách khoa Hà Nội",
+      "is_member": true,
+      "group_type": "HN",
+      "member_role": "PGS",
+      "academic_field": "An toàn thông tin",
+      "created_at": "2024-01-03T00:00:00"
+    },
+    {
+      "id": 4,
+      "name": "Phạm Minh Đức",
+      "email": "pmduc@vnu.edu.vn",
+      "affiliation": "Đại học Quốc gia Hà Nội",
+      "is_member": true,
+      "group_type": "HN",
+      "member_role": "GS",
+      "academic_field": "Mạng & Truyền thông",
+      "created_at": "2024-01-04T00:00:00"
+    },
+    {
+      "id": 5,
+      "name": "Hoàng Thị Mai",
+      "email": "htmai@ptit.edu.vn",
+      "affiliation": "Học viện Công nghệ Bưu chính Viễn thông",
+      "is_member": true,
+      "group_type": "NCS",
+      "member_role": "TS",
+      "academic_field": "Khoa học máy tính",
+      "created_at": "2024-02-01T00:00:00"
+    },
+    {
+      "id": 6,
+      "name": "Vũ Anh Tuấn",
+      "email": "vatuan@ptit.edu.vn",
+      "affiliation": "Học viện Công nghệ Bưu chính Viễn thông",
+      "is_member": true,
+      "group_type": "NCKH",
+      "member_role": "SV",
+      "academic_field": "Công nghệ phần mềm",
+      "created_at": "2024-03-01T00:00:00"
+    }
+  ],
+  "papers": [
+    {
+      "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
+      "journal_name": "Nature",
+      "doi": "10.1038/s41586-020-2012-7",
+      "year": 2020,
+      "status": "in_review",
+      "author_ids": [
+        1
+      ],
+      "main_author_id": 1,
+      "corresponding_author_id": null,
+      "author_roles": {
+        "1": "main"
+      },
+      "ranking": "Q1",
+      "sjr_score": 1.0,
+      "issn": "0028-0836",
+      "notes": "Đăng và thẩm định bởi AI. Điểm quy đổi: 0.0.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "A pneumonia outbreak associated with a new coronavirus of probable bat origin",
+        "journal_name": "Nature",
+        "issn": "0028-0836",
+        "year": 2020,
+        "ranking": "Q1"
+      },
+      "id": 52,
+      "created_at": "2026-05-21T14:30:44.748959"
+    },
+    {
+      "id": 53,
+      "title": "An Energy-Efficient Routing Protocol for Wireless Sensor Networks",
+      "journal_name": "COMPUTER COMMUNICATIONS",
+      "doi": "10.1109/mock.53",
+      "year": 2024,
+      "status": "published",
+      "author_ids": [
+        1,
+        4
+      ],
+      "main_author_id": 1,
+      "corresponding_author_id": 4,
+      "author_roles": {
+        "1": "main",
+        "4": "corresponding"
+      },
+      "ranking": "Q1",
+      "sjr_score": 1.0,
+      "issn": "0140-3664",
+      "notes": "Dữ liệu mock cho tài khoản admin.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "An Energy-Efficient Routing Protocol for Wireless Sensor Networks",
+        "journal_name": "COMPUTER COMMUNICATIONS",
+        "issn": "0140-3664",
+        "year": 2024,
+        "ranking": "Q1"
+      },
+      "created_at": "2026-06-04T01:00:22.743667"
+    },
+    {
+      "id": 54,
+      "title": "A Deep Learning Approach for Software Defined Network Security",
+      "journal_name": "COMPUTER NETWORKS",
+      "doi": "10.1109/mock.54",
+      "year": 2024,
+      "status": "published",
+      "author_ids": [
+        1,
+        3
+      ],
+      "main_author_id": 1,
+      "corresponding_author_id": null,
+      "author_roles": {
+        "1": "main",
+        "3": "member"
+      },
+      "ranking": "Q1",
+      "sjr_score": 1.0,
+      "issn": "1389-1286",
+      "notes": "Dữ liệu mock cho tài khoản admin.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "A Deep Learning Approach for Software Defined Network Security",
+        "journal_name": "COMPUTER NETWORKS",
+        "issn": "1389-1286",
+        "year": 2024,
+        "ranking": "Q1"
+      },
+      "created_at": "2026-06-04T01:00:22.743667"
+    },
+    {
+      "id": 55,
+      "title": "Standardizing Interoperability Protocols for Internet of Things Devices",
+      "journal_name": "COMPUTER STANDARDS & INTERFACES",
+      "doi": "10.1109/mock.55",
+      "year": 2025,
+      "status": "published",
+      "author_ids": [
+        1,
+        2
+      ],
+      "main_author_id": 1,
+      "corresponding_author_id": null,
+      "author_roles": {
+        "1": "main",
+        "2": "corresponding"
+      },
+      "ranking": "Q2",
+      "sjr_score": 1.0,
+      "issn": "0920-5489",
+      "notes": "Dữ liệu mock cho tài khoản admin.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "Standardizing Interoperability Protocols for Internet of Things Devices",
+        "journal_name": "COMPUTER STANDARDS & INTERFACES",
+        "issn": "0920-5489",
+        "year": 2025,
+        "ranking": "Q2"
+      },
+      "created_at": "2026-06-04T01:00:22.743667"
+    },
+    {
+      "id": 56,
+      "title": "Robust Federated Learning under Byzantine Attacks",
+      "journal_name": "International Conference on Machine Learning (ICML)",
+      "doi": "10.1109/mock.56",
+      "year": 2023,
+      "status": "published",
+      "author_ids": [
+        1
+      ],
+      "main_author_id": 1,
+      "corresponding_author_id": null,
+      "author_roles": {
+        "1": "main"
+      },
+      "ranking": "conf_intl_prestigious",
+      "sjr_score": null,
+      "issn": null,
+      "notes": "Dữ liệu mock cho tài khoản admin.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "Robust Federated Learning under Byzantine Attacks",
+        "journal_name": "International Conference on Machine Learning (ICML)",
+        "issn": null,
+        "year": 2023,
+        "ranking": "conf_intl_prestigious"
+      },
+      "created_at": "2026-06-04T01:00:22.743667"
+    },
+    {
+      "id": 57,
+      "title": "Generative Adversarial Networks for Synthetic Medical Data Generation",
+      "journal_name": "Neural Information Processing Systems (NeurIPS)",
+      "doi": "10.1109/mock.57",
+      "year": 2022,
+      "status": "published",
+      "author_ids": [
+        1
+      ],
+      "main_author_id": 1,
+      "corresponding_author_id": null,
+      "author_roles": {
+        "1": "main"
+      },
+      "ranking": "conf_intl_prestigious",
+      "sjr_score": null,
+      "issn": null,
+      "notes": "Dữ liệu mock cho tài khoản admin.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "Generative Adversarial Networks for Synthetic Medical Data Generation",
+        "journal_name": "Neural Information Processing Systems (NeurIPS)",
+        "issn": null,
+        "year": 2022,
+        "ranking": "conf_intl_prestigious"
+      },
+      "created_at": "2026-06-04T01:00:22.743667"
+    },
+    {
+      "id": 58,
+      "title": "Real-time Object Detection in Low-light Environments",
+      "journal_name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "doi": "10.1109/mock.58",
+      "year": 2021,
+      "status": "published",
+      "author_ids": [
+        1
+      ],
+      "main_author_id": 1,
+      "corresponding_author_id": null,
+      "author_roles": {
+        "1": "main"
+      },
+      "ranking": "conf_intl_prestigious",
+      "sjr_score": null,
+      "issn": null,
+      "notes": "Dữ liệu mock cho tài khoản admin.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "Real-time Object Detection in Low-light Environments",
+        "journal_name": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "issn": null,
+        "year": 2021,
+        "ranking": "conf_intl_prestigious"
+      },
+      "created_at": "2026-06-04T01:00:22.743667"
+    },
+    {
+      "id": 59,
+      "title": "A Semantic Search Engine for Academic Publications",
+      "journal_name": "International Conference on Knowledge and Systems Engineering (KSE)",
+      "doi": "10.1109/mock.59",
+      "year": 2020,
+      "status": "published",
+      "author_ids": [
+        1
+      ],
+      "main_author_id": 1,
+      "corresponding_author_id": null,
+      "author_roles": {
+        "1": "main"
+      },
+      "ranking": "conf_intl_specialized",
+      "sjr_score": null,
+      "issn": null,
+      "notes": "Dữ liệu mock cho tài khoản admin.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "A Semantic Search Engine for Academic Publications",
+        "journal_name": "International Conference on Knowledge and Systems Engineering (KSE)",
+        "issn": null,
+        "year": 2020,
+        "ranking": "conf_intl_specialized"
+      },
+      "created_at": "2026-06-04T01:00:22.743667"
+    },
+    {
+      "id": 60,
+      "title": "Ứng dụng Học sâu trong Phân tích Quan điểm Tiếng Việt",
+      "journal_name": "Hội nghị Quốc gia về Nghiên cứu cơ bản và ứng dụng Công nghệ thông tin (FAIR)",
+      "doi": "10.1109/mock.60",
+      "year": 2023,
+      "status": "published",
+      "author_ids": [
+        1
+      ],
+      "main_author_id": 1,
+      "corresponding_author_id": null,
+      "author_roles": {
+        "1": "main"
+      },
+      "ranking": "conf_domestic_ministry",
+      "sjr_score": null,
+      "issn": null,
+      "notes": "Dữ liệu mock cho tài khoản admin.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "Ứng dụng Học sâu trong Phân tích Quan điểm Tiếng Việt",
+        "journal_name": "Hội nghị Quốc gia về Nghiên cứu cơ bản và ứng dụng Công nghệ thông tin (FAIR)",
+        "issn": null,
+        "year": 2023,
+        "ranking": "conf_domestic_ministry"
+      },
+      "created_at": "2026-06-04T01:00:22.743667"
+    },
+    {
+      "id": 61,
+      "title": "A High-Throughput Blockchain Architecture for Internet of Things",
+      "journal_name": "COMPUTER NETWORKS",
+      "doi": "10.1109/mock.61",
+      "year": 2025,
+      "status": "published",
+      "author_ids": [
+        1,
+        3,
+        5
+      ],
+      "main_author_id": 1,
+      "corresponding_author_id": null,
+      "author_roles": {
+        "1": "main",
+        "3": "corresponding",
+        "5": "member"
+      },
+      "ranking": "Q1",
+      "sjr_score": 1.0,
+      "issn": "1389-1286",
+      "notes": "Dữ liệu mock cho tài khoản admin.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "A High-Throughput Blockchain Architecture for Internet of Things",
+        "journal_name": "COMPUTER NETWORKS",
+        "issn": "1389-1286",
+        "year": 2025,
+        "ranking": "Q1"
+      },
+      "created_at": "2026-06-04T01:00:22.743667"
+    },
+    {
+      "id": 62,
+      "title": "Deep Learning for Natural Language Processing in Vietnamese",
+      "journal_name": "COMPUTER COMMUNICATIONS",
+      "doi": "10.1109/mock.62",
+      "year": 2024,
+      "status": "published",
+      "author_ids": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "main_author_id": 2,
+      "corresponding_author_id": 1,
+      "author_roles": {
+        "2": "main",
+        "1": "corresponding",
+        "5": "member",
+        "6": "member"
+      },
+      "ranking": "Q1",
+      "sjr_score": 1.0,
+      "issn": "0140-3664",
+      "notes": "Dữ liệu mock cho tài khoản admin.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "Deep Learning for Natural Language Processing in Vietnamese",
+        "journal_name": "COMPUTER COMMUNICATIONS",
+        "issn": "0140-3664",
+        "year": 2024,
+        "ranking": "Q1"
+      },
+      "created_at": "2026-06-04T01:00:22.743667"
+    },
+    {
+      "id": 63,
+      "title": "Security and Privacy in Edge Computing Systems",
+      "journal_name": "COMPUTER NETWORKS",
+      "doi": "10.1109/mock.63",
+      "year": 2024,
+      "status": "published",
+      "author_ids": [
+        1,
+        3
+      ],
+      "main_author_id": 3,
+      "corresponding_author_id": null,
+      "author_roles": {
+        "3": "main",
+        "1": "member"
+      },
+      "ranking": "Q1",
+      "sjr_score": 1.0,
+      "issn": "1389-1286",
+      "notes": "Dữ liệu mock cho tài khoản admin.",
+      "is_ai_verified": true,
+      "ai_mismatches": [],
+      "ai_metadata": {
+        "title": "Security and Privacy in Edge Computing Systems",
+        "journal_name": "COMPUTER NETWORKS",
+        "issn": "1389-1286",
+        "year": 2024,
+        "ranking": "Q1"
+      },
+      "created_at": "2026-06-04T01:00:22.743667"
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "Nhóm Trí Tuệ Nhân Tạo & Xử Lý Ngôn Ngữ Tự Nhiên (AI & NLP Lab)",
+      "description": "Nghiên cứu mô hình ngôn ngữ lớn (LLM), sinh dữ liệu tiếng Việt và thị giác máy tính.",
+      "leader_id": 2,
+      "kpi_papers_per_year": 6,
+      "members": [
+        {
+          "author_id": 2,
+          "team_role": "Trưởng nhóm (Leader)",
+          "kpi_papers": 3
+        },
+        {
+          "author_id": 1,
+          "team_role": "Nghiên cứu viên chính",
+          "kpi_papers": 2
+        },
+        {
+          "author_id": 5,
+          "team_role": "Nghiên cứu sinh",
+          "kpi_papers": 2
+        },
+        {
+          "author_id": 6,
+          "team_role": "Sinh viên NCKH",
+          "kpi_papers": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Nhóm Mạng Không Dây & Internet of Things (Wireless & IoT Lab)",
+      "description": "Nghiên cứu giao thức mạng 5G/6G, định tuyến tiết kiệm năng lượng và tính toán biên.",
+      "leader_id": 4,
+      "kpi_papers_per_year": 5,
+      "members": [
+        {
+          "author_id": 4,
+          "team_role": "Trưởng nhóm (Leader)",
+          "kpi_papers": 2
+        },
+        {
+          "author_id": 3,
+          "team_role": "Thành viên chủ chốt",
+          "kpi_papers": 2
+        },
+        {
+          "author_id": 1,
+          "team_role": "Thành viên",
+          "kpi_papers": 2
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Nhóm An Toàn Thông Tin & Mật Mã Học (Cybersecurity Lab)",
+      "description": "Nghiên cứu an toàn mạng máy tính, mật mã ứng dụng và kiến trúc phân tán Blockchain.",
+      "leader_id": 3,
+      "kpi_papers_per_year": 4,
+      "members": [
+        {
+          "author_id": 3,
+          "team_role": "Trưởng nhóm (Leader)",
+          "kpi_papers": 2
+        },
+        {
+          "author_id": 1,
+          "team_role": "Thành viên",
+          "kpi_papers": 2
+        },
+        {
+          "author_id": 5,
+          "team_role": "Thành viên",
+          "kpi_papers": 1
+        }
+      ]
+    }
+  ]
+}

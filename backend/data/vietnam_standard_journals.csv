@@ -1,0 +1,341 @@
+stt,name,governing_body,is_international_indexed,council,max_score
+1,VIETNAM JOURNAL OF MATHEMATICS,VIỆN HÀN LÂM KHOA HỌC VÀ CÔNG NGHỆ VIỆT NAM,True,Toán học,1.0
+2,VIETNAM JOURNAL OF EARTH SCIENCES,VIỆN HÀN LÂM KHOA HỌC VÀ CÔNG NGHỆ VIỆT NAM,True,Liên ngành,1.0
+3,VIETNAM JOURNAL OF CHEMISTRY,VIỆN HÀN LÂM KHOA HỌC VÀ CÔNG NGHỆ VIỆT NAM,True,Hóa học,1.0
+4,VIETNAM JOURNAL OF SCIENCE AND TECHNOLOGY,VIỆN HÀN LÂM KHOA HỌC VÀ CÔNG NGHỆ VIỆT NAM,True,Liên ngành,1.0
+5,ADVANCES IN NATURAL SCIENCES: NANOSCIENCE AND,NANOTECHNOLOGY,True,Liên ngành,1.0
+6,ACTA MATHEMATICA VIETNAMICA,VIỆN HÀN LÂM KHOA HỌC VÀ CÔNG NGHỆ VIỆT NAM,True,Toán học,1.0
+7,JOURNAL OF SCIENCE: ADVANCED MATERIALS AND DEVICES,ĐẠI HỌC QUỐC GIA HÀ NỘI,True,Liên ngành,1.0
+8,BIOMEDICAL RESEARCH AND THERAPY,ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH,True,Y học - Dược học,1.0
+9,JOURNAL OF INNOVATION AND SUSTAINABLE DEVELOPMENT,ĐẠI HỌC CẦN THƠ,True,Liên ngành,1.0
+10,INTERNATIONAL JOURNAL OF KNOWLEDGE AND SYSTEM SCIENCE,ĐẠI HỌC DUY TÂN,True,Liên ngành,1.0
+11,EAI ENDORSED TRANSACTION ON INDUSTRIAL,NETWORKS AND INTELLIGENT SYSTEMS,True,Liên ngành,1.0
+12,JOURNAL OF ECONOMICS AND DEVELOPMENT,ĐẠI HỌC KINH TẾ QUỐC DÂN,True,Kinh tế học,1.0
+13,JOURNAL OF ASIAN BUSINESS AND ECONOMIC STUDIES,ĐẠI HỌC KINH TẾ THÀNH PHỐ HỒ CHÍ MINH,True,Kinh tế học,1.0
+14,JOURNAL OF SCIENCE AND TRANSPORT TECHNOLOGY,TRƯỜNG ĐẠI HỌC CÔNG NGHỆ GIAO THÔNG VẬN TẢI,True,Liên ngành,1.0
+15,VIETNAM JOURNAL OF COMPUTER SCIENCE,TRƯỜNG ĐẠI HỌC NGUYỄN TẤT THÀNH,True,Công nghệ thông tin,1.0
+16,JOURNAL OF INFORMATION AND TELECOMMUNICATION,TRƯỜNG ĐẠI HỌC TÔN ĐỨC THẮNG,True,Công nghệ thông tin,1.0
+17,TẠP CHÍ CỘNG SẢN,BAN CHẤP HÀNH TRUNG ƯƠNG ĐẢNG CỘNG SẢN VIỆT NAM,False,Triết học - Chính trị học,0.75
+18,TẠP CHÍ CỘNG SẢN ĐIỆN TỬ,BAN CHẤP HÀNH TRUNG ƯƠNG ĐẢNG CỘNG SẢN VIỆT NAM,False,Triết học - Chính trị học,0.75
+19,"TẠP CHÍ LÝ LUẬN, PHÊ BÌNH VĂN HỌC, NGHỆ THUẬT",HỘI ĐỒNG LÝ LUẬN TRUNG ƯƠNG,False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+20,TẠP CHÍ LÝ LUẬN CHÍNH TRỊ,HỌC VIỆN CHÍNH TRỊ QUỐC GIA HỒ CHÍ MINH,False,Triết học - Chính trị học,0.75
+21,TẠP CHÍ ĐIỆN TỬ LÝ LUẬN CHÍNH TRỊ,HỌC VIỆN CHÍNH TRỊ QUỐC GIA HỒ CHÍ MINH,False,Triết học - Chính trị học,0.75
+22,TẠP CHÍ KINH TẾ VÀ QUẢN LÝ,HỌC VIỆN CHÍNH TRỊ QUỐC GIA HỒ CHÍ MINH,False,Kinh tế học,0.75
+23,TẠP CHÍ LÝ LUẬN CHÍNH TRỊ VÀ TRUYỀN THÔNG,LUẬN CHÍNH TRỊ VÀ TRUYỀN THÔNG TRONG THỰC TIỄN NGHIÊN,False,Triết học - Chính trị học,0.75
+24,TẠP CHÍ ĐIỆN TỬ LÝ LUẬN CHÍNH TRỊ VÀ TRUYỀN THÔNG,VIỆT),False,Triết học - Chính trị học,0.75
+25,TẠP CHÍ GIÁO DỤC LÝ LUẬN,"HỌC VIỆN BÁO CHÍ VÀ TUYÊN TRUYỀN, HỌC VIỆN CHÍNH TRỊ",False,Giáo dục học,0.75
+26,TẠP CHÍ KHOA HỌC CHÍNH TRỊ,"HỌC VIỆN CHÍNH TRỊ KHU VỰC II, HỌC VIỆN CHÍNH TRỊ QUỐC GIA",False,Triết học - Chính trị học,0.75
+27,TẠP CHÍ SINH HOẠT LÝ LUẬN,"HỌC VIỆN CHÍNH TRỊ KHU VỰC III, HỌC VIỆN CHÍNH TRỊ QUỐC GIA",False,Triết học - Chính trị học,0.75
+28,TẠP CHÍ THÔNG TIN KHOA HỌC CHÍNH TRỊ,"HỌC VIỆN CHÍNH TRỊ KHU VỰC IV, HỌC VIỆN CHÍNH TRỊ QUỐC GIA",False,Công nghệ thông tin,0.75
+29,TẠP CHÍ QUẢN LÝ NHÀ NƯỚC,"HỌC VIỆN HÀNH CHÍNH VÀ QUẢN TRỊ CÔNG, HỌC VIỆN CHÍNH TRỊ",False,Kinh tế học,0.75
+30,TẠP CHÍ ĐIỆN TỬ QUẢN LÝ NHÀ NƯỚC,"HỌC VIỆN HÀNH CHÍNH VÀ QUẢN TRỊ CÔNG, HỌC VIỆN CHÍNH TRỊ",False,Kinh tế học,0.75
+31,TẠP CHÍ CHỦ NGHĨA XÃ HỘI - LÝ LUẬN VÀ THỰC TIỄN,"VIỆN CHỦ NGHĨA XÃ HỘI KHOA HỌC, HỌC VIỆN CHÍNH TRỊ QUỐC",False,Triết học - Chính trị học,0.75
+32,TẠP CHÍ NGHIÊN CỨU HỒ CHÍ MINH,"VIỆN HỒ CHÍ MINH VÀ CÁC LÃNH TỤ CỦA ĐẢNG, HỌC VIỆN CHÍNH",False,Triết học - Chính trị học,0.75
+33,TẠP CHÍ LÃNH ĐẠO VÀ CHÍNH SÁCH,"VIỆN LÃNH ĐẠO HỌC VÀ CHÍNH SÁCH CÔNG, HỌC VIỆN CHÍNH",False,Liên ngành,0.5
+34,TẠP CHÍ LỊCH SỬ ĐẢNG,"VIỆN LỊCH SỬ ĐẢNG, HỌC VIỆN CHÍNH TRỊ QUỐC GIA HỒ CHÍ",False,Triết học - Chính trị học,0.75
+35,TẠP CHÍ ĐIỆN TỬ LỊCH SỬ ĐẢNG,"VIỆN LỊCH SỬ ĐẢNG, HỌC VIỆN CHÍNH TRỊ QUỐC GIA HỒ CHÍ",False,Triết học - Chính trị học,0.75
+36,TẠP CHÍ PHÁP LUẬT VỀ QUYỀN CON NGƯỜI,"VIỆN QUYỀN CON NGƯỜI, HỌC VIỆN CHÍNH TRỊ QUỐC GIA HỒ CHÍ",False,Luật học,0.75
+37,TẠP CHÍ THÔNG TIN KHOA HỌC LÝ LUẬN CHÍNH TRỊ,VẤN ĐỀ LÝ LUẬN (PHỤC VỤ LÃNH ĐẠO),False,Công nghệ thông tin,0.75
+38,TẠP CHÍ TRIẾT HỌC VÀ ĐỜI SỐNG,"VIỆN THÔNG TIN KHOA HỌC XÃ HỘI, HỌC VIỆN CHÍNH TRỊ QUỐC",False,Công nghệ thông tin,0.75
+39,TẠP CHÍ NGHIÊN CỨU VĂN HÓA VÀ PHÁT TRIỂN,"VIỆN VĂN HÓA VÀ PHÁT TRIỂN, HỌC VIỆN CHÍNH TRỊ QUỐC GIA",False,Triết học - Chính trị học,0.75
+40,VIETNAM JOURNAL OF MECHANICS,"VIỆN CƠ HỌC, VIỆN HÀN LÂM KHOA HỌC VÀ CÔNG NGHỆ VIỆT",False,Vật lý - Cơ học,0.75
+41,VIETNAM JOURNAL OF BIOTECHNOLOGY,"VIỆN CÔNG NGHỆ SINH HỌC, VIỆN HÀN LÂM KHOA HỌC VÀ CÔNG",False,Liên ngành,0.5
+42,JOURNAL OF COMPUTER SCIENCE AND CYBERNERTICS,"VIỆN CÔNG NGHỆ THÔNG TIN, VIỆN HÀN LÂM KHOA HỌC VÀ",False,Công nghệ thông tin,0.75
+43,VIETNAM JOURNAL OF MARINE SCIENCE AND TECHNOLOGY,"VIỆN HẢI DƯƠNG HỌC, VIỆN HÀN LÂM KHOA HỌC VÀ CÔNG NGHỆ",False,Liên ngành,0.5
+44,ACADEMIA JOURNAL OF BIOLOGY,"VIỆN KHOA HỌC SỰ SỐNG, VIỆN HÀN LÂM KHOA HỌC VÀ CÔNG",False,Liên ngành,0.5
+45,COMMUNICATIONS IN PHYSICS (CIP JOURNAL),"VIỆN VẬT LÝ, VIỆN HÀN LÂM KHOA HỌC VÀ CÔNG NGHỆ VIỆT",False,Vật lý - Cơ học,0.75
+46,TẠP CHÍ KHOA HỌC XÃ HỘI VIỆT NAM,VIỆN HÀN LÂM KHOA HỌC XÃ HỘI VIỆT NAM,False,Liên ngành,0.5
+47,TẠP CHÍ NHÂN LỰC KHOA HỌC XÃ HỘI,,False,Liên ngành,0.5
+48,TẠP CHÍ DÂN TỘC HỌC VÀ TÔN GIÁO HỌC,"HỌC VIỆN KHOA HỌC XÃ HỘI, VIỆN HÀN LÂM KHOA HỌC XÃ HỘI",False,Liên ngành,0.5
+49,TẠP CHÍ ĐỊA LÝ NHÂN VĂN VÀ PHÁT TRIỂN BỀN VỮNG,"VIỆN ĐỊA LÝ NHÂN VĂN VÀ PHÁT TRIỂN BỀN VỮNG, VIỆN HÀN",False,Liên ngành,0.5
+50,TẠP CHÍ KHẢO CỔ HỌC,"VIỆN KHẢO CỔ HỌC, VIỆN HÀN LÂM KHOA HỌC XÃ HỘI VIỆT NAM",False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+51,TẠP CHÍ KHOA HỌC XÃ HỘI THÀNH PHỐ HỒ CHÍ MINH,"VIỆN KHOA HỌC XÃ HỘI VÙNG NAM BỘ, VIỆN HÀN LÂM KHOA",False,Liên ngành,0.5
+52,TẠP CHÍ KHOA HỌC XÃ HỘI MIỀN TRUNG,"VIỆN KHOA HỌC XÃ HỘI VÙNG TRUNG BỘ VÀ TÂY NGUYÊN, VIỆN",False,Liên ngành,0.5
+53,TẠP CHÍ NGHIÊN CỨU KINH TẾ,CHÍNH TRỊ THẾ GIỚI,False,Kinh tế học,0.75
+54,TẠP CHÍ NGHIÊN CỨU CHÂU Á - THÁI BÌNH DƯƠNG,,False,Liên ngành,0.5
+55,TẠP CHÍ NGHIÊN CỨU CHÂU ÂU VÀ CHÂU MỸ,,False,Liên ngành,0.5
+56,"TẠP CHÍ NGHIÊN CỨU CON NGƯỜI, GIA ĐÌNH VÀ GIỚI",,False,Liên ngành,0.5
+57,TẠP CHÍ HÁN NÔM,,False,Liên ngành,0.5
+58,TẠP CHÍ NGHIÊN CỨU Á - PHI,"VIỆN NGHIÊN CỨU CHÂU Á - THÁI BÌNH DƯƠNG, VIỆN HÀN LÂM",False,Liên ngành,0.5
+59,TẠP CHÍ NGHIÊN CỨU VĂN HOÁ VIỆT NAM,,False,Liên ngành,0.5
+60,TẠP CHÍ NGÔN NGỮ,"VIỆN NGHIÊN CỨU VĂN HOÁ, VIỆN HÀN LÂM KHOA HỌC XÃ HỘI",False,Ngôn ngữ học - Văn học,0.75
+61,TẠP CHÍ NHÀ NƯỚC VÀ PHÁP LUẬT,"VIỆN NHÀ NƯỚC VÀ PHÁP LUẬT, VIỆN HÀN LÂM KHOA HỌC XÃ",False,Luật học,0.75
+62,TẠP CHÍ NGHIÊN CỨU LỊCH SỬ,"VIỆN SỬ HỌC, VIỆN HÀN LÂM KHOA HỌC XÃ HỘI VIỆT NAM",False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+63,TẠP CHÍ THÔNG TIN KHOA HỌC XÃ HỘI,"VIỆN THÔNG TIN KHOA HỌC XÃ HỘI, VIỆN HÀN LÂM KHOA HỌC",False,Công nghệ thông tin,0.75
+64,TẠP CHÍ TRIẾT HỌC,"VIỆN TRIẾT HỌC, VIỆN HÀN LÂM KHOA HỌC XÃ HỘI VIỆT NAM",False,Triết học - Chính trị học,0.75
+65,TẠP CHÍ NGHIÊN CỨU VĂN HỌC,"VIỆN VĂN HỌC, VIỆN HÀN LÂM KHOA HỌC XÃ HỘI VIỆT NAM",False,Ngôn ngữ học - Văn học,0.75
+66,TẠP CHÍ XÃ HỘI HỌC VÀ TÂM LÝ HỌC,"VIỆN XÃ HỘI HỌC VÀ TÂM LÝ HỌC, VIỆN HÀN LÂM KHOA HỌC XÃ",False,Liên ngành,0.5
+67,TẠP CHÍ CHÍNH TRỊ VÀ PHÁT TRIỂN,NHÀ XUẤT BẢN CHÍNH TRỊ QUỐC GIA SỰ THẬT,False,Triết học - Chính trị học,0.75
+68,TẠP CHÍ THANH NIÊN: NGHIÊN CỨU KHOA HỌC THANH NIÊN,TRUNG ƯƠNG ĐOÀN THANH NIÊN CỘNG SẢN HỒ CHÍ MINH,False,Triết học - Chính trị học,0.75
+69,"TẠP CHÍ KHOA HỌC, HỌC VIỆN PHỤ NŨ VIỆT NAM","HỌC VIỆN PHỤ NỮ VIỆT NAM, TRUNG ƯƠNG HỘI LIÊN HIỆP PHỤ",False,Liên ngành,0.5
+70,TẠP CHÍ KHOA HỌC KIỂM SÁT,"TRƯỜNG ĐẠI HỌC KIỂM SÁT, VIỆN KIỂM SÁT NHÂN DÂN TỐI CAO",False,Luật học,0.75
+71,TẠP CHÍ TÒA ÁN NHÂN DÂN,TÒA ÁN NHÂN DÂN TỐI CAO,False,Luật học,0.75
+72,TẠP CHÍ NGHIÊN CỨU LẬP PHÁP,VĂN PHÒNG QUỐC HỘI,False,Liên ngành,0.5
+73,TẠP CHÍ NGHIÊN CỨU KHOA HỌC KIỂM TOÁN,KIỂM TOÁN NHÀ NƯỚC,False,Toán học,0.75
+74,TẠP CHÍ NGÂN HÀNG,NGÂN HÀNG NHÀ NƯỚC VIỆT NAM,False,Kinh tế học,0.75
+75,TẠP CHÍ KINH TẾ - LUẬT VÀ NGÂN HÀNG,"HỌC VIỆN NGÂN HÀNG, NGÂN HÀNG NHÀ NƯỚC VIỆT NAM",False,Kinh tế học,0.75
+76,TẠP CHÍ KINH TẾ VÀ NGÂN HÀNG CHÂU Á,,False,Kinh tế học,0.75
+77,TẠP CHÍ NGHỆ THUẬT QUÂN SỰ VIỆT NAM,,False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+78,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ TRONG LĨNH VỰC AN TOÀN,THÔNG TIN,False,Công nghệ thông tin,0.75
+79,TẠP CHÍ Y DƯỢC THỰC HÀNH 175,"BỆNH VIỆN QUÂN Y 175, BỘ QUỐC PHÒNG",False,Y học - Dược học,0.75
+80,TẠP CHÍ QUÂN SỰ QUỐC PHÒNG,"BỘ TỔNG THAM MƯU QUÂN ĐỘI NHÂN DÂN VIỆT NAM, BỘ QUỐC",False,Liên ngành,0.5
+81,GIÁO DỤC LÝ LUẬN CHÍNH TRỊ QUÂN SỰ,"HỌC VIỆN CHÍNH TRỊ, BỘ QUỐC PHÒNG",False,Giáo dục học,0.75
+82,TẠP CHÍ NGHIÊN CỨU KHOA HỌC HẬU CẦN QUÂN SỰ,"HỌC VIỆN HẬU CẦN, BỘ QUỐC PHÒNG",False,Liên ngành,0.5
+83,TẠP CHÍ KHOA HỌC VÀ KỸ THUẬT,"HỌC VIỆN KỸ THUẬT QUÂN SỰ, BỘ QUỐC PHÒNG",False,Liên ngành,0.5
+84,TẠP CHÍ NGHIÊN CỨU CHIẾN THUẬT - CHIẾN DỊCH,"HỌC VIỆN LỤC QUÂN, BỘ QUỐC PHÒNG",False,Liên ngành,0.5
+85,TẠP CHÍ Y DƯỢC HỌC QUÂN SỰ,"HỌC VIỆN QUÂN Y, BỘ QUỐC PHÒNG",False,Y học - Dược học,0.75
+86,TẠP CHÍ QUỐC PHÒNG TOÀN DÂN,"TỔNG CỤC CHÍNH TRỊ QUÂN ĐỘI NHÂN DÂN VIỆT NAM, BỘ QUỐC",False,Triết học - Chính trị học,0.75
+87,TẠP CHÍ CÔNG NGHIỆP QUỐC PHÒNG VÀ KINH TẾ,"TỔNG CỤC CÔNG NGHỆP QUỐC PHÒNG, BỘ QUỐC PHÒNG",False,Kinh tế học,0.75
+88,TẠP CHÍ HẬU CẦN - KỸ THUẬT,"TỔNG CỤC HẬU CẦN - KỸ THUẬT, BỘ QUỐC PHÒNG",False,Liên ngành,0.5
+89,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ NHIỆT ĐỚI,"TRUNG TÂM NHIỆT ĐỚI VIỆT - NGA, BỘ QUỐC PHÒNG",False,Liên ngành,0.5
+90,TẠP CHÍ LỊCH SỬ QUÂN SỰ,"VIỆN CHIẾN LƯỢC VÀ LỊCH SỬ QUỐC PHÒNG VIỆT NAM, BỘ QUỐC",False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+91,TẠP CHÍ NGHIÊN CỨU KHOA HỌC VÀ CÔNG NGHỆ QUÂN SỰ,"VIỆN KHOA HỌC VÀ CÔNG NGHỆ QUÂN SỰ, BỘ QUỐC PHÒNG",False,Liên ngành,0.5
+92,KHOA HỌC TÌNH BÁO QUỐC PHÒNG,"VIỆN NGHIÊN CỨU KHOA HỌC TÌNH BÁO, HỌC VIỆN KHOA HỌC",False,Công nghệ thông tin,0.75
+93,TẠP CHÍ Y DƯỢC LÂM SÀNG 108,"VIỆN NGHIÊN CỨU KHOA HỌC Y DƯỢC LÂM SÀNG 108, BỘ QUỐC",False,Y học - Dược học,0.75
+94,TẠP CHÍ QUAN HỆ QUỐC PHÒNG,"VIỆN QUAN HỆ QUỐC TẾ VỀ QUỐC PHÒNG, BỘ QUỐC PHÒNG",False,Liên ngành,0.5
+95,TẠP CHÍ Y HỌC QUÂN SỰ,"VIỆN Y HỌC DỰ PHÒNG QUÂN ĐỘI, BỘ QUỐC PHÒNG",False,Y học - Dược học,0.75
+96,TẠP CHÍ Y HỌC THẢM HỌA VÀ BỎNG,"BỆNH VIỆN BỎNG QUỐC GIA LÊ HỮU TRÁC, BỘ QUỐC PHÒNG",False,Y học - Dược học,0.75
+97,TẠP CHÍ CÔNG AN NHÂN DÂN,BỘ CÔNG AN,False,Liên ngành,0.5
+98,TẠP CHÍ ĐIỆN TỬ CÔNG AN NHÂN DÂN,BỘ CÔNG AN,False,Liên ngành,0.5
+99,TẠP CHÍ CẢNH SÁT NHÂN DÂN,"HỌC VIỆN CẢNH SÁT NHÂN DÂN, BỘ CÔNG AN",False,Liên ngành,0.5
+100,TẠP CHÍ AN NINH NHÂN DÂN,"TRƯỜNG ĐẠI HỌC AN NINH NHÂN DÂN, BỘ CÔNG AN",False,Liên ngành,0.5
+101,JOURNAL OF PEOPLE'S SECURITY,"TRƯỜNG ĐẠI HỌC AN NINH NHÂN DÂN, BỘ CÔNG AN",False,Liên ngành,0.5
+102,TẠP CHÍ KHOA HỌC GIÁO DỤC CẢNH SÁT NHÂN DÂN,"TRƯỜNG ĐẠI HỌC CẢNH SÁT NHÂN DÂN, BỘ CÔNG AN",False,Giáo dục học,0.75
+103,TẠP CHÍ LÝ LUẬN CHÍNH TRỊ CÔNG AN NHÂN DÂN,"HỌC VIỆN CHÍNH TRỊ CÔNG AN NHÂN DÂN, BỘ CÔNG AN",False,Triết học - Chính trị học,0.75
+104,TẠP CHÍ KHOA HỌC VÀ GIÁO DỤC AN NINH,"HỌC VIỆN AN NINH NHÂN DÂN, BỘ CÔNG AN",False,Giáo dục học,0.75
+105,TẠP CHÍ KHOA HỌC VÀ HUẤN LUYỆN TÌNH BÁO,"HỌC VIỆN QUỐC TẾ, BỘ CÔNG AN",False,Công nghệ thông tin,0.75
+106,TẠP CHÍ PHÒNG CHÁY VÀ CHỮA CHÁY,"TRƯỜNG ĐẠI HỌC PHÒNG CHÁY CHỮA CHÁY, BỘ CÔNG AN",False,Liên ngành,0.5
+107,TẠP CHÍ PHÒNG CHÁY VÀ CHỮA CHÁY ĐIỆN TỬ,"TRƯỜNG ĐẠI HỌC PHÒNG CHÁY CHỮA CHÁY, BỘ CÔNG AN",False,Liên ngành,0.5
+108,TẠP CHÍ KHOA HỌC KỸ THUẬT - HẬU CẦN,"TRƯỜNG KỸ THUẬT VÀ CÔNG NGHỆ AN NINH, BỘ CÔNG AN",False,Liên ngành,0.5
+109,TẠP CHÍ NGHIÊN CỨU QUỐC TẾ,BỘ NGOẠI GIAO,False,Liên ngành,0.5
+110,TẠP CHÍ TỔ CHỨC NHÀ NƯỚC VÀ LAO ĐỘNG,BỘ NỘI VỤ,False,Liên ngành,0.5
+111,TẠP CHÍ NGUỒN NHÂN LỰC VÀ AN SINH XÃ HỘI,"TRƯỜNG ĐẠI HỌC LAO ĐỘNG - XÃ HỘI, BỘ NỘI VỤ",False,Liên ngành,0.5
+112,TẠP CHÍ DÂN CHỦ VÀ PHÁP LUẬT,BỘ TƯ PHÁP,False,Luật học,0.75
+113,TẠP CHÍ NGHỀ LUẬT,"HỌC VIỆN TƯ PHÁP, BỘ TƯ PHÁP",False,Luật học,0.75
+114,TẠP CHÍ LUẬT HỌC,"TRƯỜNG ĐẠI HỌC LUẬT HÀ NỘI, BỘ TƯ PHÁP",False,Luật học,0.75
+115,TẠP CHÍ KINH TẾ-TÀI CHÍNH,BỘ TÀI CHÍNH,False,Kinh tế học,0.75
+116,TẠP CHÍ KINH TẾ - TÀI CHÍNH ONLINE,BỘ TÀI CHÍNH,False,Kinh tế học,0.75
+117,TẠP CHÍ NGHIÊN CỨU TÀI CHÍNH KẾ TOÁN,"HỌC VIỆN TÀI CHÍNH, BỘ TÀI CHÍNH",False,Kinh tế học,0.75
+118,TẠP CHÍ KHOA HỌC TÀI CHÍNH KẾ TOÁN,"TRƯỜNG ĐẠI HỌC TÀI CHÍNH - KẾ TOÁN, BỘ TÀI CHÍNH",False,Kinh tế học,0.75
+119,TẠP CHÍ NGHIÊN CỨU TÀI CHÍNH - MARKETING,"TRƯỜNG ĐẠI HỌC TÀI CHÍNH - MARKETING, BỘ TÀI CHÍNH",False,Kinh tế học,0.75
+120,TẠP CHÍ TÀI CHÍNH - QUẢN TRỊ KINH DOANH,"TRƯỜNG ĐẠI HỌC TÀI CHÍNH - QUẢN TRỊ KINH DOANH, BỘ TÀI",False,Kinh tế học,0.75
+121,TẠP CHÍ CÔNG THƯƠNG,BỘ CÔNG THƯƠNG,False,Liên ngành,0.5
+122,NGHIÊN CỨU CÔNG NGHIỆP VÀ THƯƠNG MẠI,,False,Kinh tế học,0.75
+123,"VIỆN NGHIÊN CỨU CHIẾN LƯỢC, CHÍNH SÁCH CÔNG THƯƠNG, BỘ",CÔNG THƯƠNG,False,Liên ngành,0.5
+124,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP,"TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP HÀ NỘI, BỘ CÔNG THƯƠNG",False,Liên ngành,0.5
+125,TẠP CHÍ ĐIỆN TỬ KHOA HỌC VÀ CÔNG NGHỆ QUI,,False,Liên ngành,0.5
+126,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ - TRƯỜNG ĐẠI HỌC CÔNG,NGHIỆP THÀNH PHỐ HỒ CHÍ MINH,False,Liên ngành,0.5
+127,TẠP CHÍ KHOA HỌC ĐẠI HỌC CÔNG THƯƠNG,"TRƯỜNG ĐẠI HỌC CÔNG THƯƠNG THÀNH PHỐ HỒ CHÍ MINH, BỘ",False,Liên ngành,0.5
+128,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ NĂNG LƯỢNG,"TRƯỜNG ĐẠI HỌC ĐIỆN LỰC, BỘ CÔNG THƯƠNG",False,Liên ngành,0.5
+129,TẠP CHÍ KHOA HỌC & CÔNG NGHỆ,"TRƯỜNG ĐẠI HỌC KINH TẾ - KỸ THUẬT CÔNG NGHIỆP, BỘ CÔNG",False,Kinh tế học,0.75
+130,TẠP CHÍ NGHIÊN CỨU KHOA HỌC - ĐẠI HỌC SAO ĐỎ,"TRƯỜNG ĐẠI HỌC SAO ĐỎ, BỘ CÔNG THƯƠNG",False,Liên ngành,0.5
+131,TẠP CHÍ NÔNG NGHIỆP VÀ MÔI TRƯỜNG,BỘ NÔNG NGHIỆP VÀ MÔI TRƯỜNG,False,Nông nghiệp - Lâm nghiệp,0.75
+132,TẠP CHÍ KHOA HỌC NÔNG NGHIỆP VIỆT NAM,"HỌC VIỆN NÔNG NGHIỆP VIỆT NAM, BỘ NÔNG NGHIỆP VÀ MÔI",False,Nông nghiệp - Lâm nghiệp,0.75
+133,TẠP CHÍ BẢO VỆ THỰC VẬT,"VIỆN BẢO VỆ THỰC VẬT, VIỆN KHOA HỌC NÔNG NGHIỆP VIỆT",False,Nông nghiệp - Lâm nghiệp,0.75
+134,TẠP CHÍ MÔI TRƯỜNG,"VIỆN CHIẾN LƯỢC, CHÍNH SÁCH NÔNG NGHIỆP VÀ MÔI TRƯỜNG,",False,Nông nghiệp - Lâm nghiệp,0.75
+135,TẠP CHÍ ĐỊA CHẤT,"VIỆN KHOA HỌC ĐỊA CHẤT VÀ KHOÁNG SẢN, BỘ NÔNG NGHIỆP",False,Nông nghiệp - Lâm nghiệp,0.75
+136,TẠP CHÍ KHOA HỌC BIẾN ĐỔI KHÍ HẬU,"VIỆN KHOA HỌC KHÍ TƯỢNG THỦY VĂN, MÔI TRƯỜNG VÀ BIỂN,",False,Liên ngành,0.5
+137,TẠP CHÍ KHOA HỌC LÂM NGHIỆP,"VIỆN KHOA HỌC LÂM NGHIỆP VIỆT NAM, BỘ NÔNG NGHIỆP VÀ",False,Nông nghiệp - Lâm nghiệp,0.75
+138,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ NÔNG NGHIỆP VIỆT NAM,"VIỆN KHOA HỌC NÔNG NGHIỆP VIỆT NAM, BỘ NÔNG NGHIỆP VÀ",False,Nông nghiệp - Lâm nghiệp,0.75
+139,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ THỦY LỢI,"VIỆN KHOA HỌC THỦY LỢI VIỆT NAM, BỘ NÔNG NGHIỆP VÀ MÔI",False,Nông nghiệp - Lâm nghiệp,0.75
+140,TẠP CHÍ NGHỀ CÁ SÔNG CỬU LONG,"VIỆN NGHIÊN CỨU NUÔI TRỒNG THỦY SẢN II, BỘ NÔNG NGHIỆP",False,Nông nghiệp - Lâm nghiệp,0.75
+141,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ LÂM NGHIỆP,"TRƯỜNG ĐẠI HỌC LÂM NGHIỆP, BỘ NÔNG NGHIỆP VÀ MÔI",False,Nông nghiệp - Lâm nghiệp,0.75
+142,TẠP CHÍ KHOA HỌC TÀI NGUYÊN VÀ MÔI TRƯỜNG,ENVIRONMENT,False,Liên ngành,0.5
+143,TẠP CHÍ KHOA HỌC KỸ THUẬT THỦY LỢI VÀ MÔI TRƯỜNG,ENGINEERING,False,Liên ngành,0.5
+144,TẠP CHÍ XÂY DỰNG,BỘ XÂY DỰNG,False,Xây dựng - Kiến trúc,0.75
+145,TẠP CHÍ XÂY DỰNG VÀ ĐÔ THỊ,"HỌC VIỆN CHIẾN LƯỢC, BỒI DƯỠNG CÁN BỘ XÂY DỰNG, BỘ XÂY",False,Xây dựng - Kiến trúc,0.75
+146,TẠP CHÍ KHOA HỌC CÔNG NGHỆ HÀNG KHÔNG,"HỌC VIỆN HÀNG KHÔNG VIỆT NAM, BỘ XÂY DỰNG",False,Xây dựng - Kiến trúc,0.75
+147,TẠP CHÍ KIẾN TRÚC VIỆT NAM,"VIỆN KIẾN TRÚC QUỐC GIA, BỘ XÂY DỰNG",False,Xây dựng - Kiến trúc,0.75
+148,TẠP CHÍ KINH TẾ XÂY DỰNG,"VIỆN KINH TẾ XÂY DỰNG, BỘ XÂY DỰNG",False,Kinh tế học,0.75
+149,TẠP CHÍ QUY HOẠCH XÂY DỰNG,"VIỆN QUY HOẠCH ĐÔ THỊ VÀ NÔNG THÔN QUỐC GIA, BỘ XÂY",False,Xây dựng - Kiến trúc,0.75
+150,TẠP CHÍ VẬT LIỆU VÀ XÂY DỰNG,"VIỆN VẬT LIỆU XÂY DỰNG, BỘ XÂY DỰNG",False,Xây dựng - Kiến trúc,0.75
+151,TẠP CHÍ ĐIỆN TỬ KHOA HỌC VÀ CÔNG NGHỆ GIAO THÔNG,"TRƯỜNG ĐẠI HỌC CÔNG NGHỆ GIAO THÔNG VẬN TẢI, BỘ XÂY",False,Liên ngành,0.5
+152,TẠP CHÍ KHOA HỌC CÔNG NGHỆ GIAO THÔNG VẬN TẢI,TRƯỜNG ĐẠI HỌC GIAO THÔNG VẬN TẢI THÀNH PHỐ HỒ CHÍ,False,Liên ngành,0.5
+153,TẠP CHÍ KHOA HỌC CÔNG NGHỆ HÀNG HẢI,"TRƯỜNG ĐẠI HỌC HÀNG HẢI VIỆT NAM, BỘ XÂY DỰNG",False,Xây dựng - Kiến trúc,0.75
+154,TẠP CHÍ KHOA HỌC KIẾN TRÚC VÀ XÂY DỰNG,"TRƯỜNG ĐẠI HỌC KIẾN TRÚC HÀ NỘI, BỘ XÂY DỰNG",False,Xây dựng - Kiến trúc,0.75
+155,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ TRƯỜNG ĐẠI HỌC XÂY DỰNG,MIỀN TÂY,False,Xây dựng - Kiến trúc,0.75
+156,TẠP CHÍ VĂN HÓA NGHỆ THUẬT,"TRƯỜNG ĐẠI HỌC XÂY DỰNG MIỀN TÂY, BỘ XÂY DỰNG",False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+157,"TẠP CHÍ VĂN HOÁ, THỂ THAO VÀ DU LỊCH",THAO,False,Liên ngành,0.5
+158,TẠP CHÍ NGHIÊN CỨU MỸ THUẬT,"TRƯỜNG ĐẠI HỌC MỸ THUẬT VIỆT NAM, BỘ VĂN HÓA, THỂ THAO",False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+159,TẠP CHÍ KHOA HỌC VÀ ĐÀO TẠO THỂ THAO,"TRƯỜNG ĐẠI HỌC THỂ DỤC THỂ THAO ĐÀ NẴNG, BỘ VĂN HÓA,",False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+160,TẠP CHÍ KHOA HỌC ĐÀO TẠO VÀ HUẤN LUYỆN THỂ THAO,"TRƯỜNG ĐẠI HỌC THỂ DỤC THỂ THAO BẮC NINH, BỘ VĂN HÓA,",False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+161,TẠP CHÍ KHOA HỌC VÀ ĐÀO TẠO THỂ DỤC THỂ THAO,"TRƯỜNG ĐẠI HỌC THỂ DỤC THỂ THAO THÀNH PHỐ HỒ CHÍ MINH,",False,Liên ngành,0.5
+162,TẠP CHÍ NGHIÊN CỨU VĂN HÓA,"TRƯỜNG ĐẠI HỌC VĂN HÓA HÀ NỘI, BỘ VĂN HÓA, THỂ THAO VÀ",False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+163,TẠP CHÍ VĂN HÓA VÀ NGUỒN LỰC,"TRƯỜNG ĐẠI HỌC VĂN HÓA THÀNH PHỐ HỒ CHÍ MINH, BỘ VĂN",False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+164,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ VIỆT NAM,ENGINEERING,False,Liên ngành,0.5
+165,TẠP CHÍ THÔNG TIN VÀ TƯ LIỆU,"VIỆN THỐNG KÊ VÀ ĐÁNH GIÁ KHOA HỌC, CỤC THÔNG TIN,",False,Công nghệ thông tin,0.75
+166,TẠP CHÍ GIÁO DỤC,BỘ GIÁO DỤC VÀ ĐÀO TẠO,False,Giáo dục học,0.75
+167,TẠP CHÍ QUẢN LÝ GIÁO DỤC,"HỌC VIỆN QUẢN LÝ GIÁO DỤC, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+168,TẠP CHÍ KHOA HỌC GIÁO DỤC VIỆT NAM,"VIỆN KHOA HỌC GIÁO DỤC VIỆT NAM, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+169,TẠP CHÍ KHOA HỌC ĐẠI HỌC QUỐC GIA HÀ NỘI,TRÁI ĐẤT VÀ MÔI TRƯỜNG,False,Liên ngành,0.5
+170,TẠP CHÍ NGHIÊN CỨU NƯỚC NGOÀI,,False,Liên ngành,0.5
+171,TẠP CHÍ KHOA HỌC XÃ HỘI VÀ NHÂN VĂN,"TRƯỜNG ĐẠI HỌC NGOẠI NGỮ, ĐẠI HỌC QUỐC GIA HÀ NỘI",False,Liên ngành,0.5
+172,TẠP CHÍ KINH TẾ VÀ KINH DOANH,"TRƯỜNG ĐẠI HỌC KINH TẾ, ĐẠI HỌC QUỐC GIA HÀ NỘI",False,Kinh tế học,0.75
+173,TẠP CHÍ ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH,DEVELOPMENT,False,Liên ngành,0.5
+174,TẠP CHÍ KHOA HỌC QUỐC TẾ AGU,"TRƯỜNG ĐẠI HỌC AN GIANG, ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ",False,Liên ngành,0.5
+175,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ ĐẠI HỌC THÁI NGUYÊN,KHOA HỌC NÔNG NGHIỆP - LÂM NGHIỆP - Y DƯỢC,False,Y học - Dược học,0.75
+176,TẠP CHÍ KINH TẾ VÀ QUẢN TRỊ KINH DOANH,"TRƯỜNG ĐẠI HỌC KINH TẾ VÀ QUẢN TRỊ KINH DOANH, ĐẠI HỌC",False,Kinh tế học,0.75
+177,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ Y DƯỢC,PHARMACY,False,Y học - Dược học,0.75
+178,TẠP CHÍ KHOA HỌC ĐẠI HỌC HUẾ,VÀ NHÂN VĂN,False,Liên ngành,0.5
+179,TẠP CHÍ KHOA HỌC QUẢN LÝ VÀ KINH TẾ,"TRƯỜNG ĐẠI HỌC KINH TẾ, ĐẠI HỌC HUẾ",False,Kinh tế học,0.75
+180,PHÁP LUẬT VÀ THỰC TIỄN,"TRƯỜNG ĐẠI HỌC LUẬT, ĐẠI HỌC HUẾ",False,Luật học,0.75
+181,TẠP CHÍ KHOA HỌC NGÔN NGỮ VÀ VĂN HÓA,"TRƯỜNG ĐẠI HỌC NGOẠI NGỮ, ĐẠI HỌC HUẾ",False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+182,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ NÔNG NGHIỆP,"TRƯỜNG ĐẠI HỌC NÔNG LÂM, ĐẠI HỌC HUẾ",False,Nông nghiệp - Lâm nghiệp,0.75
+183,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ TRƯỜNG ĐẠI HỌC KHOA HỌC,TOÁN - CÔNG NGHỆ THÔNG TIN - VẬT LÝ - KIẾN TRÚC,False,Toán học,0.75
+184,TẠP CHÍ KHOA HỌC VÀ GIÁO DỤC,"TRƯỜNG ĐẠI HỌC SƯ PHẠM, ĐẠI HỌC HUẾ",False,Giáo dục học,0.75
+185,TẠP CHÍ Y DƯỢC HUẾ,"TRƯỜNG ĐẠI HỌC Y - DƯỢC, ĐẠI HỌC HUẾ",False,Y học - Dược học,0.75
+186,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ ĐẠI HỌC ĐÀ NẴNG,"ĐẠI HỌC ĐÀ NẴNG, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+187,TẠP CHÍ KHOA HỌC KINH TẾ,"TRƯỜNG ĐẠI HỌC KINH TẾ, ĐẠI HỌC ĐÀ NẴNG",False,Kinh tế học,0.75
+188,"TẠP CHÍ KHOA HỌC XÃ HỘI, NHÂN VĂN VÀ GIÁO DỤC","TRƯỜNG ĐẠI HỌC SƯ PHẠM, ĐẠI HỌC ĐÀ NẴNG",False,Giáo dục học,0.75
+189,TẠP CHÍ KHOA HỌC ĐẠI HỌC CẦN THƠ,DEVELOPMENT,False,Liên ngành,0.5
+190,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ,"ĐẠI HỌC BÁCH KHOA HÀ NỘI, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+191,TẠP CHÍ KINH TẾ VÀ PHÁT TRIỂN,"ĐẠI HỌC KINH TẾ QUỐC DÂN, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Kinh tế học,0.75
+192,TẠP CHÍ NGHIÊN CỨU KINH TẾ VÀ KINH DOANH CHÂU Á,"ĐẠI HỌC KINH TẾ THÀNH PHỐ HỒ CHÍ MINH, BỘ GIÁO DỤC VÀ",False,Kinh tế học,0.75
+193,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ - ĐẠI HỌC NGUYỄN TẤT THÀNH,"TRƯỜNG ĐẠI HỌC NGUYỄN TẤT THÀNH, BỘ GIÁO DỤC VÀ ĐÀO",False,Giáo dục học,0.75
+194,TẠP CHÍ KHOA HỌC QUẢN LÝ GIÁO DỤC,"TRƯỜNG CÁN BỘ QUẢN LÝ GIÁO DỤC THÀNH PHỐ HỒ CHÍ MINH,",False,Giáo dục học,0.75
+195,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ - TRƯỜNG ĐẠI HỌC BÌNH,DƯƠNG,False,Liên ngành,0.5
+196,TẠP CHÍ KHOA HỌC GIÁO DỤC KỸ THUẬT,"TRƯỜNG ĐẠI HỌC BÌNH DƯƠNG, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+197,TẠP CHÍ KHOA HỌC ĐẠI HỌC CỬU LONG,"TRƯỜNG ĐẠI HỌC CỬU LONG, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+198,TẠP CHÍ KHOA HỌC ĐẠI HỌC ĐÀ LẠT,"TRƯỜNG ĐẠI HỌC ĐÀ LẠT, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+199,TẠP CHÍ KHOA HỌC ĐẠI HỌC ĐÔNG Á,"TRƯỜNG ĐẠI HỌC ĐÔNG Á, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+200,"TẠP CHÍ KHOA HỌC, CÔNG NGHỆ VÀ PHÁT TRIỂN","TRƯỜNG ĐẠI HỌC ĐÔNG ĐÔ, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+201,TẠP CHÍ KHOA HỌC ĐẠI HỌC ĐỒNG THÁP,HỌC XÃ HỘI VÀ NHÂN VĂN,False,Liên ngành,0.5
+202,TẠP CHÍ KHOA HỌC GIAO THÔNG VẬN TẢI,"TRƯỜNG ĐẠI HỌC GIAO THÔNG VẬN TẢI, BỘ GIÁO DỤC VÀ ĐÀO",False,Giáo dục học,0.75
+203,TẠP CHÍ KHOA HỌC NGOẠI NGỮ,"TRƯỜNG ĐẠI HỌC HÀ NỘI, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+204,TẠP CHÍ KHOA HỌC KINH DOANH VÀ CÔNG NGHỆ,"TRƯỜNG ĐẠI HỌC KINH DOANH VÀ CÔNG NGHỆ HÀ NỘI, BỘ GIÁO",False,Kinh tế học,0.75
+205,TẠP CHÍ KINH TẾ - CÔNG NGHIỆP,"TRƯỜNG ĐẠI HỌC KINH TẾ CÔNG NGHIỆP LONG AN, BỘ GIÁO DỤC",False,Kinh tế học,0.75
+206,TẠP CHÍ PHÁT TRIỂN VÀ HỘI NHẬP,"TRƯỜNG ĐẠI HỌC KINH TẾ TÀI CHÍNH THÀNH PHỐ HỒ CHÍ MINH,",False,Kinh tế học,0.75
+207,TẠP CHÍ KHOA HỌC LẠC HỒNG,"TRƯỜNG ĐẠI HỌC LẠC HỒNG, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+208,TẠP CHÍ KHOA HỌC PHÁP LÝ VIỆT NAM,"TRƯỜNG ĐẠI HỌC LUẬT THÀNH PHỐ HỒ CHÍ MINH, BỘ GIÁO DỤC",False,Giáo dục học,0.75
+209,TẠP CHÍ KHOA HỌC KỸ THUẬT MỎ - ĐỊA CHẤT,"TRƯỜNG ĐẠI HỌC MỎ - ĐỊA CHẤT, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+210,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC MỞ HÀ NỘI,"TRƯỜNG ĐẠI HỌC MỞ HÀ NỘI, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+211,TẠP CHÍ KHOA HỌC ĐẠI HỌC MỞ THÀNH PHỐ HỒ CHÍ MINH,COMPUTATIONAL STRUCTURES,False,Liên ngành,0.5
+212,TẠP CHÍ KHOA HỌC VÀ KINH TẾ PHÁT TRIỂN,"TRƯỜNG ĐẠI HỌC NAM CẦN THƠ, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Kinh tế học,0.75
+213,TẠP CHÍ KHOA HỌC HUFLIT,TRƯỜNG ĐẠI HỌC NGOẠI NGỮ - TIN HỌC THÀNH PHỐ HỒ CHÍ,False,Liên ngành,0.5
+214,TẠP CHÍ QUẢN LÝ VÀ KINH TẾ QUỐC TẾ,"TRƯỜNG ĐẠI HỌC NGOẠI THƯƠNG, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Kinh tế học,0.75
+215,TẠP CHÍ KHOA HỌC - CÔNG NGHỆ THỦY SẢN,,False,Nông nghiệp - Lâm nghiệp,0.75
+216,TẠP CHÍ NÔNG NGHIỆP VÀ PHÁT TRIỂN,"TRƯỜNG ĐẠI HỌC NHA TRANG, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+217,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC PHAN THIẾT,"TRƯỜNG ĐẠI HỌC PHAN THIẾT, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+218,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC QUY NHƠN,"TRƯỜNG ĐẠI HỌC QUY NHƠN, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+219,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI,"TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+220,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI 2,"TRƯỜNG ĐẠI HỌC SƯ PHẠM HÀ NỘI 2, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+221,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ ỨNG DỤNG,"TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT HƯNG YÊN, BỘ GIÁO DỤC",False,Giáo dục học,0.75
+222,TẠP CHÍ GIÁO DỤC NGHỆ THUẬT,"TRƯỜNG ĐẠI HỌC SƯ PHẠM NGHỆ THUẬT TRUNG ƯƠNG, BỘ GIÁO",False,Giáo dục học,0.75
+223,"TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC SƯ PHẠM THÀNH PHỐ HỒ CHÍ TRƯỜNG ĐẠI HỌC SƯ PHẠM THÀNH PHỐ HỒ CHÍ MINH, BỘ GIÁO",MINH,False,Giáo dục học,0.75
+224,TẠP CHÍ KHOA HỌC GIÁO DỤC THỂ CHẤT VÀ THỂ THAO TRƯỜNG,HỌC,False,Giáo dục học,0.75
+225,TẠP CHÍ KHOA HỌC TÀI CHÍNH - NGÂN HÀNG,"TRƯỜNG ĐẠI HỌC TÀI CHÍNH - NGÂN HÀNG HÀ NỘI, BỘ GIÁO DỤC",False,Kinh tế học,0.75
+226,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC TÂY BẮC,"TRƯỜNG ĐẠI HỌC TÂY BẮC, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+227,TẠP CHÍ NGHIÊN CỨU KHOA HỌC VÀ PHÁT TRIỂN KINH TẾ,"TRƯỜNG ĐẠI HỌC TÂY ĐÔ, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Kinh tế học,0.75
+228,TẠP CHÍ KHOA HỌC TÂY NGUYÊN,"TRƯỜNG ĐẠI HỌC TÂY NGUYÊN, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+229,TẠP CHÍ KHOA HỌC THĂNG LONG,"TRƯỜNG ĐẠI HỌC THĂNG LONG, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+230,TẠP CHÍ NGHIÊN CỨU KHOA HỌC VÀ PHÁT TRIỂN,"TRƯỜNG ĐẠI HỌC THÀNH ĐÔ, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+231,"TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ TRƯỜNG ĐẠI HỌC THÀNH ĐÔNG TRƯỜNG ĐẠI HỌC THÀNH ĐÔNG, BỘ GIÁO DỤC VÀ ĐÀO TẠO",,False,Giáo dục học,0.75
+232,TẠP CHÍ KHOA HỌC THƯƠNG MẠI,"TRƯỜNG ĐẠI HỌC THƯƠNG MẠI, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Kinh tế học,0.75
+233,TẠP CHÍ KHOA HỌC CÔNG NGHỆ XÂY DỰNG,"TRƯỜNG ĐẠI HỌC XÂY DỰNG HÀ NỘI, BỘ GIÁO DỤC VÀ ĐÀO TẠO",False,Giáo dục học,0.75
+234,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC VINH,"HỌC TỰ NHIÊN, KỸ THUẬT VÀ CÔNG NGHỆ",False,Liên ngành,0.5
+235,TẠP CHÍ Y HỌC LÂM SÀNG,"BỆNH VIỆN BẠCH MAI, BỘ Y TẾ",False,Y học - Dược học,0.75
+236,TẠP CHÍ CHÂM CỨU VIỆT NAM,"BỆNH VIỆN CHÂM CỨU TRUNG ƯƠNG, BỘ Y TẾ",False,Y học - Dược học,0.75
+237,TẠP CHÍ SỨC KHOẺ VÀ LÃO HOÁ,"BỆNH VIỆN THỐNG NHẤT, BỘ Y TẾ",False,Y học - Dược học,0.75
+238,TẠP CHÍ Y HỌC LÂM SÀNG BỆNH VIỆN TRUNG ƯƠNG HUẾ,"BỆNH VIỆN TRUNG ƯƠNG HUẾ, BỘ Y TẾ",False,Y học - Dược học,0.75
+239,TẠP CHÍ Y DƯỢC CỔ TRUYỀN VIỆT NAM,"HỌC VIỆN Y - DƯỢC HỌC CỔ TRUYỀN VIỆT NAM, BỘ Y TẾ",False,Y học - Dược học,0.75
+240,TẠP CHÍ DƯỢC LIỆU,"VIỆN DƯỢC LIỆU, BỘ Y TẾ",False,Y học - Dược học,0.75
+241,TẠP CHÍ KHOA HỌC KIỂM ĐỊNH VẮC XIN VÀ SINH PHẨM Y TẾ,,False,Y học - Dược học,0.75
+242,TẠP CHÍ KIỂM NGHIỆM VÀ AN TOÀN THỰC PHẨM,"VIỆN KIỂM ĐỊNH QUỐC GIA VẮC XIN VÀ SINH PHẨM Y TẾ, BỘ Y TẾ",False,Y học - Dược học,0.75
+243,TẠP CHỈ KIỂM NGHIỆM DƯỢC VÀ MỸ PHẨM,"VIỆN KIỂM NGHIỆM THUỐC TRUNG ƯƠNG, BỘ Y TẾ",False,Y học - Dược học,0.75
+244,TẠP CHÍ Y HỌC THÀNH PHỐ HỒ CHÍ MINH,"ĐẠI HỌC Y DƯỢC THÀNH PHỐ HỒ CHÍ MINH, BỘ Y TẾ",False,Y học - Dược học,0.75
+245,TẠP CHÍ KHOA HỌC ĐIỀU DƯỠNG,"TRƯỜNG ĐẠI HỌC ĐIỀU DƯỠNG NAM ĐỊNH, BỘ Y TẾ",False,Y học - Dược học,0.75
+246,TẠP CHÍ NGHIÊN CỨU DƯỢC VÀ THÔNG TIN THUỐC,"TRƯỜNG ĐẠI HỌC DƯỢC HÀ NỘI, BỘ Y TẾ",False,Y học - Dược học,0.75
+247,TẠP CHÍ Y DƯỢC HỌC CẦN THƠ,"TRƯỜNG ĐẠI HỌC Y DƯỢC CẦN THƠ, BỘ Y TẾ",False,Y học - Dược học,0.75
+248,TẠP CHÍ KHOA HỌC SỨC KHỎE,"TRƯỜNG ĐẠI HỌC Y DƯỢC HẢI PHÒNG, BỘ Y TẾ",False,Y học - Dược học,0.75
+249,TẠP CHÍ Y DƯỢC THÁI BÌNH,"TRƯỜNG ĐẠI HỌC Y DƯỢC THÁI BÌNH, BỘ Y TẾ",False,Y học - Dược học,0.75
+250,TẠP CHÍ NGHIÊN CỨU Y HỌC,"TRƯỜNG ĐẠI HỌC Y HÀ NỘI, BỘ Y TẾ",False,Y học - Dược học,0.75
+251,TẠP CHÍ KHOA HỌC NGHIÊN CỨU SỨC KHỎE VÀ PHÁT TRIỂN,"TRƯỜNG ĐẠI HỌC Y TẾ CÔNG CỘNG, BỘ Y TẾ",False,Y học - Dược học,0.75
+252,TẠP CHI KHOA HỌC TRƯỜNG ĐẠI HỌC HẢI PHÒNG,"TRƯỜNG ĐẠI HỌC HẢI PHÒNG, ỦY BAN NHÂN DÂN THÀNH PHỐ",False,Liên ngành,0.5
+253,TẠP CHÍ NGHIÊN CỨU VÀ PHÁT TRIỂN,"VIỆN NGHIÊN CỨU PHÁT TRIỂN THÀNH PHỐ HUẾ, ỦY BAN NHÂN",False,Liên ngành,0.5
+254,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC BẠC LIÊU,"TRƯỜNG ĐẠI HỌC BẠC LIÊU, ỦY BAN NHÂN DÂN TỈNH CÀ MAU",False,Liên ngành,0.5
+255,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC PHÚ YÊN,"TRƯỜNG ĐẠI HỌC PHÚ YÊN, ỦY BAN NHÂN DÂN TỈNH ĐẮK LẮK",False,Liên ngành,0.5
+256,TẠP CHÍ KHOA HỌC - ĐẠI HỌC ĐỒNG NAI,"TRƯỜNG ĐẠI HỌC ĐỒNG NAI, ỦY BAN NHÂN DÂN TỈNH ĐỒNG NAI",False,Liên ngành,0.5
+257,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC HÀ TĨNH,"TRƯỜNG ĐẠI HỌC HÀ TĨNH, ỦY BAN NHÂN DÂN TỈNH HÀ TĨNH",False,Liên ngành,0.5
+258,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ TRƯỜNG ĐẠI HỌC HẢI DƯƠNG,"TRƯỜNG ĐẠI HỌC HẢI DƯƠNG, ỦY BAN NHÂN DÂN THÀNH PHỐ",False,Liên ngành,0.5
+259,TẠP CHÍ KHOA HỌC ĐẠI HỌC KHÁNH HÒA,"TRƯỜNG ĐẠI HỌC KHÁNH HÒA, ỦY BAN NHÂN DÂN TỈNH KHÁNH",False,Liên ngành,0.5
+260,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC NGHỆ AN,"TRƯỜNG ĐẠI HỌC KINH TẾ NGHỆ AN, ỦY BAN NHÂN DÂN TỈNH",False,Kinh tế học,0.75
+261,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC HOA LƯ,"TRƯỜNG ĐẠI HỌC HOA LƯ, ỦY BAN NHÂN DÂN TỈNH NINH BÌNH",False,Liên ngành,0.5
+262,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ TRƯỜNG ĐẠI HỌC HÙNG VƯƠNG,"TRƯỜNG ĐẠI HỌC HÙNG VƯƠNG, ỦY BAN NHÂN DÂN TỈNH PHÚ",False,Liên ngành,0.5
+263,264 TẠP CHÍ KHOA HỌC ĐẠI HỌC HẠ LONG,"TRƯỜNG ĐẠI HỌC HẠ LONG, ỦY BAN NHÂN DÂN TỈNH QUẢNG",False,Liên ngành,0.5
+265,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ ĐẠI HỌC QUẢNG BÌNH,"TRƯỜNG ĐẠI HỌC QUẢNG BÌNH, ỦY BAN NHÂN DÂN TỈNH QUẢNG",False,Liên ngành,0.5
+266,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC HỒNG ĐỨC,GIÁO DỤC VÀ QUẢN LÝ,False,Giáo dục học,0.75
+267,"TẠP CHÍ KHOA HỌC, TRƯỜNG ĐẠI HỌC VĂN HÓA, THỂ THAO VÀ DU",LỊCH THANH HÓA,False,Văn hóa - Nghệ thuật - Lịch sử,0.75
+268,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC TÂN TRÀO,"TRƯỜNG ĐẠI HỌC TÂN TRÀO, ỦY BAN NHÂN DÂN TỈNH TUYÊN",False,Liên ngành,0.5
+269,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC TRÀ VINH,"TRƯỜNG ĐẠI HỌC TRÀ VINH, ỦY BAN NHÂN DÂN TỈNH VĨNH",False,Liên ngành,0.5
+270,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ CẦN THƠ,"TRƯỜNG ĐẠI HỌC KỸ THUẬT VÀ CÔNG NGHỆ CẦN THƠ, ỦY BAN",False,Liên ngành,0.5
+271,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC QUẢNG NAM,"TRƯỜNG ĐẠI HỌC QUẢNG NAM, ỦY BAN NHÂN DÂN THÀNH PHỐ",False,Liên ngành,0.5
+272,TẠP CHÍ KHOA HỌC - TRƯỜNG ĐẠI HỌC THỦ ĐÔ HÀ NỘI,HỌC TỰ NHIÊN VÀ CÔNG NGHỆ,False,Liên ngành,0.5
+273,TẠP CHÍ KHOA HỌC PHÁT TRIỂN NHÂN LỰC,"HỌC VIỆN CÁN BỘ THÀNH PHỐ HỒ CHÍ MINH, ỦY BAN NHÂN DÂN",False,Liên ngành,0.5
+274,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC SÀI GÒN,"TRƯỜNG ĐẠI HỌC SÀI GÒN, ỦY BAN NHÂN DÂN THÀNH PHỐ HỒ",False,Liên ngành,0.5
+275,TẠP CHÍ KHOA HỌC ĐẠI HỌC THỦ DẦU MỘT,"TRƯỜNG ĐẠI HỌC THỦ DẦU MỘT, ỦY BAN NHÂN DÂN THÀNH PHỐ",False,Liên ngành,0.5
+276,"TẠP CHÍ ĐIỆN TỬ: THU DAU MOT UNIVERSITY JOURNAL OF SCIENCE TRƯỜNG ĐẠI HỌC THỦ DẦU MỘT, ỦY BAN NHÂN DÂN THÀNH PHỐ",ONLINE,False,Liên ngành,0.5
+277,TẠP CHÍ Y DƯỢC HỌC PHẠM NGỌC THẠCH,"TRƯỜNG ĐẠI HỌC Y KHOA PHẠM NGỌC THẠCH, ỦY BAN NHÂN",False,Y học - Dược học,0.75
+278,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ ĐẠI HỌC DUY TÂN,ĐẠI HỌC DUY TÂN,False,Liên ngành,0.5
+279,TẠP CHÍ KHOA HỌC VÀ QUẢN LÝ CÔNG NGHỆ,TRƯỜNG ĐẠI HỌC CÔNG NGHỆ VÀ QUẢN LÝ HỮU NGHỊ,False,Liên ngành,0.5
+280,TẠP CHÍ KHOA HỌC ĐẠI HỌC GIA ĐỊNH,TRƯỜNG ĐẠI HỌC GIA ĐỊNH,False,Liên ngành,0.5
+281,TẠP CHÍ KHOA HỌC VÀ CÔNG NGHỆ TRƯỜNG ĐẠI HỌC HÒA BÌNH,TRƯỜNG ĐẠI HỌC HÒA BÌNH,False,Liên ngành,0.5
+282,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC HOA SEN,TRƯỜNG ĐẠI HỌC HOA SEN,False,Liên ngành,0.5
+283,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC QUỐC TẾ HỒNG BÀNG,SCIENCE,False,Liên ngành,0.5
+284,TẠP CHÍ KHOA HỌC TRƯỜNG ĐẠI HỌC TÂN TẠO,TRƯỜNG ĐẠI HỌC QUỐC TẾ HỒNG BÀNG,False,Liên ngành,0.5
+285,TẠP CHÍ KHOA HỌC ĐẠI HỌC VĂN HIẾN,TRƯỜNG ĐẠI HỌC VĂN HIẾN,False,Liên ngành,0.5
+286,TẠP CHÍ KHOA HỌC ĐẠI HỌC VĂN LANG,TRƯỜNG ĐẠI HỌC VĂN LANG,False,Liên ngành,0.5
+287,TẠP CHÍ KHOA HỌC YERSIN,TRƯỜNG ĐẠI HỌC YERSIN ĐÀ LẠT,False,Liên ngành,0.5
+288,TẠP CHÍ ĐIỆN TỬ CÔNG NGHỆ TIÊN TIẾN VÀ TÍNH TOÁN,TRƯỜNG ĐẠI HỌC TÔN ĐỨC THẮNG,False,Toán học,0.75
+289,TẠP CHÍ LUẬT SƯ VIỆT NAM,LIÊN ĐOÀN LUẬT SƯ VIỆT NAM,False,Luật học,0.75
+290,TẠP CHÍ GIÁO DỤC VÀ XÃ HỘI,"VIỆN NGHIÊN CỨU VÀ ỨNG DỤNG CÔNG NGHỆ GIÁO DỤC ATEC,",False,Giáo dục học,0.75
+291,TẠP CHÍ CƠ KHÍ VIỆT NAM,TỔNG HỘI CƠ KHÍ VIỆT NAM,False,Liên ngành,0.5
+292,TẠP CHÍ NGƯỜI XÂY DỰNG,TỔNG HỘI XÂY DỰNG VIỆT NAM,False,Xây dựng - Kiến trúc,0.75
+293,TẠP CHÍ Y HỌC CỘNG ĐỒNG,"VIỆN SỨC KHỎE CỘNG ĐỒNG, TỔNG HỘI Y HỌC VIỆT NAM",False,Y học - Dược học,0.75
+294,TẠP CHÍ ĐIỆN TỬ VIỆT NAM HỘI NHẬP,"VIỆN CHÍNH SÁCH, PHÁP LUẬT VÀ QUẢN LÝ, LIÊN HIỆP CÁC HỘI",False,Luật học,0.75
+295,TẠP CHÍ TRUYỀN THỐNG VÀ PHÁT TRIỂN,"VIỆN NGHIÊN CỨU TRUYỀN THỐNG VÀ PHÁT TRIỂN, LIÊN HIỆP",False,Liên ngành,0.5
+296,TẠP CHÍ PHÁP LÝ,"VIỆN KHOA HỌC PHÁP LÝ VÀ KINH DOANH QUỐC TẾ, HỘI LUẬT",False,Kinh tế học,0.75
+297,TẠP CHÍ PHÁP LUẬT VÀ PHÁT TRIỂN,"VIỆN NGHIÊN CỨU PHÁP LUẬT VÀ KINH TẾ ASEAN, TRUNG ƯƠNG",False,Kinh tế học,0.75
+298,TẠP CHÍ ĐIỆN TỬ PHÁP LUẬT VÀ PHÁT TRIỂN,"VIỆN NGHIÊN CỨU PHÁP LUẬT VÀ KINH TẾ ASEAN, TRUNG ƯƠNG",False,Kinh tế học,0.75
+299,TẠP CHÍ KINH TẾ VÀ LAO ĐỘNG,"TRƯỜNG ĐẠI HỌC CÔNG ĐOÀN, TỔNG LIÊN ĐOÀN LAO ĐỘNG VIỆT",False,Kinh tế học,0.75
+300,TẠP CHÍ KINH TẾ CHÂU Á - THÁI BÌNH DƯƠNG,TRUNG TÂM KINH TẾ CHÂU Á - THÁI BÌNH DƯƠNG,False,Kinh tế học,0.75
+301,TẠP CHÍ ĐIỀU DƯỠNG VIỆT NAM,HIỆP HỘI ĐIỀU DƯỠNG VIỆT NAM,False,Liên ngành,0.5
+302,TẠP CHÍ KẾ TOÁN VÀ KIỂM TOÁN,HIỆP HỘI KẾ TOÁN VÀ KIỂM TOÁN VIỆT NAM,False,Toán học,0.75
+303,TẠP CHÍ THỊ TRƯỜNG TÀI CHÍNH TIỀN TỆ,HIỆP HỘI NGÂN HÀNG VIỆT NAM,False,Kinh tế học,0.75
+304,TẠP CHÍ THIẾT BỊ GIÁO DỤC,HIỆP HỘI THIẾT BỊ GIÁO DỤC VIỆT NAM,False,Giáo dục học,0.75
+305,TẠP CHÍ KHOA HỌC KỸ THUẬT CHĂN NUÔI,HỘI CHĂN NUÔI VIỆT NAM,False,Liên ngành,0.5
+306,TAP CHÍ CÔNG NGHIỆP NÔNG THÔN,HỘI CƠ KHÍ NÔNG NGHIỆP VIỆT NAM,False,Nông nghiệp - Lâm nghiệp,0.75
+307,TẠP CHÍ GIÁO CHỨC VIỆT NAM,HỘI CỰU GIÁO CHỨC VIỆT NAM,False,Liên ngành,0.5
+308,TẠP CHÍ DA LIỄU HỌC VIỆT NAM,HỘI DA LIỄU VIỆT NAM,False,Liên ngành,0.5
+309,TẠP CHÍ ĐIỆN QUANG VÀ Y HỌC HẠT NHÂN VIỆT NAM,HỘI ĐIỆN QUANG VÀ Y HỌC HẠT NHÂN VIỆT NAM,False,Y học - Dược học,0.75
+310,TẠP CHÍ DINH DƯỠNG VÀ THỰC PHẨM,HỘI DINH DƯỠNG VIỆT NAM,False,Liên ngành,0.5
+311,TẠP CHÍ XÚC TÁC VÀ HẤP PHỤ VIỆT NAM,HỘI KHOA HỌC CÔNG NGHỆ XÚC TÁC VÀ HẤP PHỤ VIỆT NAM,False,Liên ngành,0.5
+312,TẠP CHÍ KHOA HỌC ĐẤT,HỘI KHOA HỌC ĐẤT VIỆT NAM,False,Liên ngành,0.5
+313,TẠP CHÍ CẦU ĐƯỜNG VIỆT NAM,HỘI KHOA HỌC KỸ THUẬT CẦU ĐƯỜNG VIỆT NAM,False,Liên ngành,0.5
+314,TẠP CHÍ LUYỆN KIM VÀ KHOA HỌC VẬT LIỆU,HỘI KHOA HỌC KỸ THUẬT ĐÚC - LUYỆN KIM VIỆT NAM,False,Liên ngành,0.5
+315,TẠP CHÍ PHÂN TÍCH HÓA - LÝ VÀ SINH HỌC,HỘI KHOA HỌC KỸ THUẬT PHÂN TÍCH HÓA - LÝ VÀ SINH HỌC,False,Liên ngành,0.5
+316,TẠP CHÍ KHOA HỌC KỸ THUẬT THÚ Y,HỘI KHOA HỌC KỸ THUẬT THÚ Y VIỆT NAM,False,Liên ngành,0.5
+317,TẠP CHÍ KHOA HỌC TIÊU HÓA VIỆT NAM,HỘI KHOA HỌC TIÊU HÓA VIỆT NAM,False,Liên ngành,0.5
+318,TẠP CHÍ CÔNG NGHIỆP MỎ,HỘI KHOA HỌC VÀ CÔNG NGHỆ MỎ VIỆT NAM,False,Liên ngành,0.5
+319,TẠP CHÍ KIẾN TRÚC,HỘI KIẾN TRÚC SƯ VIỆT NAM,False,Xây dựng - Kiến trúc,0.75
+320,TẠP CHÍ NGOẠI KHOA VÀ PHẪU THUẬT NỘI SOI VIỆT NAM,HỘI NGOẠI KHOA VÀ PHẪU THUẬT NỘI SOI VIỆT NAM,False,Liên ngành,0.5
+321,TẠP CHÍ SỨC KHỎE NỘI TIẾT,HỘI NGƯỜI GIÁO DỤC BỆNH ĐÁI THÁO ĐƯỜNG VIỆT NAM,False,Giáo dục học,0.75
+322,TẠP CHÍ NHÃN KHOA VIỆT NAM,HỘI NHÃN KHOA VIỆT NAM,False,Liên ngành,0.5
+323,TẠP CHÍ NHI KHOA,HỘI NHI KHOA VIỆT NAM,False,Liên ngành,0.5
+324,TẠP CHÍ NỘI TIẾT - ĐÁI THÁO ĐƯỜNG,HỘI NỘI TIẾT - ĐÁI THÁO ĐƯỜNG VIỆT NAM,False,Liên ngành,0.5
+325,TẠP CHÍ PHẪU THUẬT TIM MẠCH VÀ LỒNG NGỰC VIỆT NAM,HỘI PHẪU THUẬT TIM MẠCH VÀ LỒNG NGỰC VIỆT NAM,False,Liên ngành,0.5
+326,TẠP CHÍ PHỤ SẢN,HỘI PHỤ SẢN VIỆT NAM,False,Liên ngành,0.5
+327,TẠP CHÍ QUY HOẠCH ĐÔ THỊ,HỘI QUY HOẠCH PHÁT TRIỂN ĐÔ THỊ VIỆT NAM,False,Liên ngành,0.5
+328,TẠP CHÍ RĂNG HÀM MẶT VIỆT NAM,HỘI RĂNG HÀM MẶT VIỆT NAM,False,Liên ngành,0.5
+329,TẠP CHÍ SINH LÝ HỌC VIỆT NAM,HỘI SINH LÝ HỌC VIỆT NAM,False,Liên ngành,0.5
+330,TẠP CHÍ TAI MŨI HỌNG,HỘI TAI MŨI HỌNG VIỆT NAM,False,Liên ngành,0.5
+331,TẠP CHÍ TÂM LÝ HỌC VIỆT NAM,HỘI TÂM LÝ HỌC VIỆT NAM,False,Liên ngành,0.5
+332,TẠP CHÍ THẦN KINH HỌC VIỆT NAM,HỘI THẦN KINH HỌC VIỆT NAM,False,Liên ngành,0.5
+333,TẠP CHÍ TIM MẠCH HỌC VIỆT NAM,HỘI TIM MẠCH HỌC VIỆT NAM,False,Liên ngành,0.5
+334,TẠP CHÍ TRẮC ĐỊA - BẢN ĐỒ,HỘI TRẮC ĐỊA - BẢN ĐỒ - VIỄN THÁM VIỆT NAM,False,Liên ngành,0.5
+335,TẠP CHÍ TRUYỀN NHIỄM VIỆT NAM,HỘI TRUYỀN NHIỄM VIỆT NAM,False,Liên ngành,0.5
+336,"TẠP CHÍ ĐO LƯỜNG, ĐIỀU KHIỂN VÀ TỰ ĐỘNG HÓA",HỘI TỰ ĐỘNG HÓA VIỆT NAM,False,Liên ngành,0.5
+337,TẠP CHÍ UNG THƯ HỌC VIỆT NAM,HỘI UNG THƯ VIỆT NAM,False,Liên ngành,0.5
+338,TẠP CHÍ NGUỒN SÁNG DÂN GIAN,HỘI VĂN NGHỆ DÂN GIAN VIỆT NAM,False,Liên ngành,0.5
+339,REV JOURNAL ON ELECTRONICS AND COMMUNICATIONS,HỘI VÔ TUYẾN - ĐIỆN TỬ VIỆT NAM,False,Liên ngành,0.5
+339,TẠP CHÍ Y HỌC DỰ PHÒNG,HỘI Y HỌC DỰ PHÒNG VIỆT NAM,False,Y học - Dược học,0.75
+341,TẠP CHÍ Y TẾ CÔNG CỘNG,HỘI Y TẾ CÔNG CỘNG VIỆT NAM,False,Y học - Dược học,0.75

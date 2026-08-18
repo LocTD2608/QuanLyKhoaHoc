@@ -1,0 +1,147 @@
+[
+  {
+    "description_for_rag": "Tiêu chí: Tiêu chuẩn đạo đức. Đối với Phó Giáo Sư: Không vi phạm đạo đức nhà giáo, không đang bị kỷ luật từ khiển trách trở lên hoặc thi hành án; trung thực, khách quan trong đào tạo và nghiên cứu.",
+    "is_logical": true,
+    "row_type": "data",
+    "metadata": {
+      "Tiêu chí": "Tiêu chuẩn đạo đức",
+      "Phó Giáo Sư": "Không vi phạm đạo đức nhà giáo, không đang bị kỷ luật từ khiển trách trở lên hoặc thi hành án; trung thực, khách quan trong đào tạo và nghiên cứu.",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Tiêu chí: Giờ giảng chuẩn. Đối với Phó Giáo Sư: Đạt ≥275 giờ chuẩn/năm (≥50% trực tiếp lên lớp). Đối với giảng viên thỉnh giảng, thực hiện ít nhất 50% giờ chuẩn kèm xác nhận, đánh giá bằng văn bản của cơ sở GDĐH.",
+    "is_logical": true,
+    "row_type": "data",
+    "metadata": {
+      "Tiêu chí": "Giờ giảng chuẩn",
+      "Phó Giáo Sư": "Đạt ≥275 giờ chuẩn/năm (≥50% trực tiếp lên lớp). Đối với giảng viên thỉnh giảng, thực hiện ít nhất 50% giờ chuẩn kèm xác nhận, đánh giá bằng văn bản của cơ sở GDĐH",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Tiêu chí: Thời gian công tác đào tạo ĐH trở lên. Đối với Phó Giáo Sư: Đủ thời gian đào tạo theo quy định. Giảng dạy ở nước ngoài có xác nhận thì được tính. Đi tu nghiệp ≤12 tháng trong 3 năm cuối không tính gián đoạn (nếu đã công tác ≥10 năm).",
+    "is_logical": true,
+    "row_type": "data",
+    "metadata": {
+      "Tiêu chí": "Thời gian công tác đào tạo ĐH trở lên",
+      "Phó Giáo Sư": "Đủ thời gian đào tạo theo quy định. Giảng dạy ở nước ngoài có xác nhận thì được tính. Đi tu nghiệp ≤12 tháng trong 3 năm cuối không tính gián đoạn (nếu đã công tác ≥10 năm).",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Tiêu chí: Thời gian công tác đào tạo ĐH trở lên. Đối với Phó Giáo Sư: Có ít nhất 6 năm (3 năm cuối liên tiếp) trực tiếp giảng dạy trình độ đại học trở lên. Nếu chưa đủ 6 năm hoặc thiếu giờ giảng chuẩn → cần có ≥ 2 lần điểm công trình khoa học quy đổi tối thiểu. Đối với Giáo Sư: Có ít nhất 9 năm, trong đó ≥3 năm sau khi được bổ nhiệm PGS. Nếu chưa đủ 3 năm hoặc thiếu giờ giảng chuẩn → cần có ≥ 2 lần điểm công trình khoa học quy đổi tối thiểu.",
+    "is_logical": true,
+    "row_type": "data",
+    "metadata": {
+      "Tiêu chí": "Thời gian công tác đào tạo ĐH trở lên",
+      "Phó Giáo Sư": "Có ít nhất 6 năm (3 năm cuối liên tiếp) trực tiếp giảng dạy trình độ đại học trở lên. Nếu chưa đủ 6 năm hoặc thiếu giờ giảng chuẩn → cần có ≥ 2 lần điểm công trình khoa học quy đổi tối thiểu.",
+      "Giáo Sư": "Có ít nhất 9 năm, trong đó ≥3 năm sau khi được bổ nhiệm PGS. Nếu chưa đủ 3 năm hoặc thiếu giờ giảng chuẩn → cần có ≥ 2 lần điểm công trình khoa học quy đổi tối thiểu.",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Tiêu chí: Ngoại ngữ. Đối với Phó Giáo Sư: Thành thạo 1 ngoại ngữ phục vụ chuyên môn, có khả năng giao tiếp tiếng Anh. Đối với Giáo Sư: Có ít nhất 9 năm, trong đó ≥3 năm sau khi được bổ nhiệm PGS. Nếu chưa đủ 3 năm hoặc thiếu giờ giảng chuẩn → cần có ≥ 2 lần điểm công trình khoa học quy đổi tối thiểu.",
+    "is_logical": false,
+    "row_type": "data",
+    "metadata": {
+      "Tiêu chí": "Ngoại ngữ",
+      "Phó Giáo Sư": "Thành thạo 1 ngoại ngữ phục vụ chuyên môn, có khả năng giao tiếp tiếng Anh",
+      "Giáo Sư": "Có ít nhất 9 năm, trong đó ≥3 năm sau khi được bổ nhiệm PGS. Nếu chưa đủ 3 năm hoặc thiếu giờ giảng chuẩn → cần có ≥ 2 lần điểm công trình khoa học quy đổi tối thiểu.",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Đối với Phó Giáo Sư yêu cầu có bằng tiến sĩ ít nhất 3 năm (tính đến hạn nộp hồ sơ). Đối với Giáo Sư yêu cầu đã được bổ nhiệm Phó Giáo Sư ít nhất 3 năm (tính đến hạn nộp hồ sơ).",
+    "is_logical": true,
+    "row_type": "data",
+    "metadata": {
+      "Tiêu chí": "Bằng cấp học thuật",
+      "Phó Giáo Sư": "Có bằng tiến sĩ ít nhất 3 năm (tính đến hạn nộp hồ sơ)",
+      "Giáo Sư": "Đã được bổ nhiệm PGS ít nhất 3 năm (tính đến hạn nộp hồ sơ)",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Đối với Phó Giáo Sư cần đạt ≥10 điểm công trình khoa học quy đổi theo quy định: 1. Có ít nhất 2,5 điểm thực hiện trong 3 năm cuối tính đến ngày nộp hồ sơ. 2. Ứng viên khoa học tự nhiên, kỹ thuật, công nghệ, y dược: → Phải có 6,0 điểm từ bài báo KH, bằng sáng chế hoặc giải pháp hữu ích. Ứng viên khoa học xã hội, nhân văn, nghệ thuật, thể thao: → Phải có 4,0 điểm từ bài báo KH, giải pháp hữu ích, tác phẩm nghệ thuật, huấn luyện, thi đấu thể thao đạt giải quốc gia hoặc quốc tế. Đối với Giáo Sư cần đạt ≥20 điểm công trình khoa học quy đổi theo quy định: 1. Có ít nhất 5,0 điểm thực hiện trong 3 năm cuối tính đến ngày nộp hồ sơ. 2. Ứng viên khoa học tự nhiên, kỹ thuật, công nghệ, y dược: → Phải có 12,0 điểm từ bài báo khoa học, sáng chế, giải pháp hữu ích. Ứng viên khoa học xã hội, nhân văn, nghệ thuật, thể thao: → Phải có 8,0 điểm từ bài báo khoa học, giải pháp hữu ích, tác phẩm nghệ thuật, thành tích huấn luyện, thể thao đạt giải quốc gia/quốc tế. 3. (**) Ứng viên tự nhiên, kỹ thuật, công nghệ, y dược: → Có 3,0 điểm từ biên soạn sách phục vụ đào tạo, trong đó ít nhất 1,5 điểm từ giáo trình hoặc sách chuyên khảo. Ứng viên xã hội, nghệ thuật, thể thao: → Có 5,0 điểm từ biên soạn sách, trong đó ít nhất 2,5 điểm từ giáo trình hoặc sách chuyên khảo. Nếu chưa đủ, được thay bằng các công trình khoa học khác.",
+    "is_logical": true,
+    "row_type": "data",
+    "metadata": {
+      "Tiêu chí": "Công trình khoa học (điểm quy đổi)",
+      "Phó Giáo Sư": "Đạt ≥10 điểm công trình khoa học quy đổi theo quy định: 1. Có ít nhất 2,5 điểm thực hiện trong 3 năm cuối tính đến ngày nộp hồ sơ. 2. Ứng viên khoa học tự nhiên, kỹ thuật, công nghệ, y dược: → Phải có 6,0 điểm từ bài báo KH, bằng sáng chế hoặc giải pháp hữu ích. Ứng viên khoa học xã hội, nhân văn, nghệ thuật, thể thao: → Phải có 4,0 điểm từ bài báo KH, giải pháp hữu ích, tác phẩm nghệ thuật, huấn luyện, thi đấu thể thao đạt giải quốc gia hoặc quốc tế.",
+      "Giáo Sư": "Đạt ≥20 điểm công trình khoa học quy đổi theo quy định: 1. Có ít nhất 5,0 điểm thực hiện trong 3 năm cuối tính đến ngày nộp hồ sơ. 2. Ứng viên khoa học tự nhiên, kỹ thuật, công nghệ, y dược: → Phải có 12,0 điểm từ bài báo khoa học, sáng chế, giải pháp hữu ích. Ứng viên khoa học xã hội, nhân văn, nghệ thuật, thể thao: → Phải có 8,0 điểm từ bài báo khoa học, giải pháp hữu ích, tác phẩm nghệ thuật, thành tích huấn luyện, thể thao đạt giải quốc gia/quốc tế. 3. (**) Ứng viên tự nhiên, kỹ thuật, công nghệ, y dược: → Có 3,0 điểm từ biên soạn sách phục vụ đào tạo, trong đó ít nhất 1,5 điểm từ giáo trình hoặc sách chuyên khảo. Ứng viên xã hội, nghệ thuật, thể thao: → Có 5,0 điểm từ biên soạn sách, trong đó ít nhất 2,5 điểm từ giáo trình hoặc sách chuyên khảo. Nếu chưa đủ, được thay bằng các công trình khoa học khác.",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Đối với Phó Giáo Sư: (***)(****) Trước 2020: Tác giả chính của ít nhất 02 công trình khoa học. Nếu chưa đủ thì: tối thiểu 01 công trình khoa học + 01 chương sách phục vụ đào tạo/01 sách chuyên khảo do một NSX có uy tín. Từ 1/1/2020: Tác giả chính của ít nhất 03 công trình khoa học. Nếu chưa đủ thì: tối thiểu 02 công trình khoa học + 01 chương sách phục vụ đào tạo/01 sách chuyên khảo do một NSX có uy tín. Đối với Giáo Sư: (**) (****) Trước 2020: Tác giả chính của ít nhất 03 công trình khoa học. Nếu chưa đủ thì: tối thiểu 02 công trình khoa học + 01 chương sách phục vụ đào tạo/01 sách chuyên khảo do một NSX có uy tín. Từ 1/1/2020: Tác giả chính của ít nhất 05 công trình khoa học. Nếu chưa đủ thì: tối thiểu 03 công trình khoa học + 02 chương sách phục vụ đào tạo/02 sách chuyên khảo do một NSX có uy tín.",
+    "is_logical": true,
+    "row_type": "data",
+    "metadata": {
+      "Tiêu chí": "Kết quả nghiên cứu khoa học",
+      "Phó Giáo Sư": "(***)(****) Trước 2020: Tác giả chính của ít nhất 02 công trình khoa học. Nếu chưa đủ thì: tối thiểu 01 công trình khoa học + 01 chương sách phục vụ đào tạo/01 sách chuyên khảo do một NSX có uy tín. Từ 1/1/2020: Tác giả chính của ít nhất 03 công trình khoa học. Nếu chưa đủ thì: tối thiểu 02 công trình khoa học + 01 chương sách phục vụ đào tạo/01 sách chuyên khảo do một NSX có uy tín.",
+      "Giáo Sư": "(**)(****) Trước 2020: Tác giả chính của ít nhất 03 công trình khoa học. Nếu chưa đủ thì: tối thiểu 02 công trình khoa học + 01 chương sách phục vụ đào tạo/01 sách chuyên khảo do một NSX có uy tín. Từ 1/1/2020: Tác giả chính của ít nhất 05 công trình khoa học. Nếu chưa đủ thì: tối thiểu 03 công trình khoa học + 02 chương sách phục vụ đào tạo/02 sách chuyên khảo do một NSX có uy tín.",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Đối với Phó Giáo Sư: (****) Hướng dẫn chính ≥2 học viên đã bảo vệ thành công luận án thạc sĩ (1 với tiến sĩ)(*). Nếu không đủ, có thể thay thế 1 học viên = 1 công trình khoa học. Đối với Giáo Sư: (**) Hướng dẫn chính ≥2 nghiên cứu sinh đã bảo vệ thành công luận án tiến sĩ. Nếu không đủ, có thể thay thế 1 nghiên cứu sinh = 3 công trình khoa học.",
+    "is_logical": true,
+    "row_type": "data",
+    "metadata": {
+      "Tiêu chí": "Hướng dẫn học viên/nghiên cứu sinh",
+      "Phó Giáo Sư": "(***) Hướng dẫn chính ≥2 học viên đã bảo vệ thành công luận án thạc sĩ (1 với tiến sĩ)(*). Nếu không đủ, có thể thay thế 1 học viên = 1 công trình khoa học.",
+      "Giáo Sư": "(**) Hướng dẫn chính ≥2 nghiên cứu sinh đã bảo vệ thành công luận án tiến sĩ. Nếu không đủ, có thể thay thế 1 nghiên cứu sinh = 3 công trình khoa học.",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Đối với Phó Giáo Sư: (****) Chủ trì ít nhất 2 nhiệm vụ KHCN cấp Cơ Sở hoặc 1 nhiệm vụ KHCN cấp Bộ (đã nghiệm thu đạt yêu cầu). Nếu chưa đủ, thay thế bằng 1 công trình khoa học. Đối với Giáo Sư: (**) Có chủ trì biên soạn sách đào tạo đại học trở lên Chủ trì ít nhất 2 nhiệm vụ KHCN cấp Bộ hoặc 1 nhiệm vụ KHCN cấp Quốc Gia (đã nghiệm thu đạt yêu cầu). Nếu chưa đủ, thay thế bằng công trình khoa học với mỗi nhiệm vụ còn thiếu.",
+    "is_logical": true,
+    "row_type": "data",
+    "metadata": {
+      "Tiêu chí": "Chủ trì/phát triển chương trình đào tạo hoặc nghiên cứu",
+      "Phó Giáo Sư": "(***) Chủ trì ít nhất 2 nhiệm vụ KHCN cấp Cơ Sở hoặc 1 nhiệm vụ KHCN cấp Bộ (đã nghiệm thu đạt yêu cầu). Nếu chưa đủ, thay thế bằng 1 công trình khoa học.",
+      "Giáo Sư": "(**) Có chủ trì biên soạn sách đào tạo đại học trở lên Chủ trì ít nhất 2 nhiệm vụ KHCN cấp Bộ hoặc 1 nhiệm vụ KHCN cấp Quốc Gia (đã nghiệm thu đạt yêu cầu). Nếu chưa đủ, thay thế bằng công trình khoa học với mỗi nhiệm vụ còn thiếu",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Đối với tiêu chí chủ trì/phát triển chương trình đào tạo hoặc nghiên cứu: Phó Giáo Sư yêu cầu chủ trì ít nhất 2 nhiệm vụ KHCN cấp Cơ Sở hoặc 1 nhiệm vụ KHCN cấp Bộ (đã nghiệm thu đạt yêu cầu), nếu chưa đủ thì thay thế bằng 1 công trình khoa học. Giáo Sư yêu cầu chủ trì biên soạn sách đào tạo đại học trở lên, chủ trì ít nhất 2 nhiệm vụ KHCN cấp Bộ hoặc 1 nhiệm vụ KHCN cấp Quốc Gia (đã nghiệm thu đạt yêu cầu), nếu chưa đủ thì thay thế bằng công trình khoa học với mỗi nhiệm vụ còn thiếu.",
+    "is_logical": true,
+    "row_type": "data",
+    "metadata": {
+      "Tiêu chí": "Chủ trì/phát triển chương trình đào tạo hoặc nghiên cứu",
+      "Phó Giáo Sư": "(***) Chủ trì ít nhất 2 nhiệm vụ KHCN cấp Cơ Sở hoặc 1 nhiệm vụ KHCN cấp Bộ (đã nghiệm thu đạt yêu cầu). Nếu chưa đủ, thay thế bằng 1 công trình khoa học.",
+      "Giáo Sư": "(**) Có chủ trì biên soạn sách đào tạo đại học trở lên Chủ trì ít nhất 2 nhiệm vụ KHCN cấp Bộ hoặc 1 nhiệm vụ KHCN cấp Quốc Gia (đã nghiệm thu đạt yêu cầu). Nếu chưa đủ, thay thế bằng công trình khoa học với mỗi nhiệm vụ còn thiếu",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Lưu ý về tiêu chuẩn bài báo và quy định chuyển tiếp: Chỉ chấp nhận bài báo công bố trên tạp chí khoa học quốc tế uy tín để tính cho tiêu chuẩn GS/PGS. Riêng KH quân sự, an ninh liên quan bí mật nhà nước thuộc lĩnh vực quốc phòng, an ninh được thay thế bằng bài báo khoa học uy tín của ngành Khoa học Quân sự và An ninh (bài báo thay thế), với tổng điểm đạt 1,5 trở lên, không tính vào tổng điểm công trình khoa học quy đổi tối thiểu. Các chú thích (*) đến (*) giải thích tương đương luận văn chuyên khoa/bác sĩ nội trú ~ 1 thạc sĩ, sau đạt PGS, sau bảo vệ luận án tiến sĩ. Lộ trình áp dụng Quyết định 37/2018/QĐ-TTg: Trước 01/01/2020 áp dụng chuẩn cũ để đảm bảo công bằng cho người nộp hồ sơ 2018–2019, từ năm 2020 áp dụng chuẩn bài báo quốc tế nghiêm ngặt hơn.",
+    "is_logical": true,
+    "row_type": "annotation",
+    "metadata": {
+      "Tiêu chí": "Lưu ý: - Bài báo khoa học: tất cả phải được công bố trên các tạp chí khoa học quốc tế uy tín, mới được tính để xét tiêu chuẩn GS/PGS - Đối với KH quân sự, KH an ninh liên quan đến bí mật nhà nước thuộc lĩnh vực quốc phòng, an ninh được thay thế bằng các bài báo khoa học công bố trên các tập chí khoa học uy tín của ngành Khoa học Quân sự và Khoa học An ninh (bài báo thay thế) - Tổng điểm bài báo thay thế cho các bài báo khoa học trên tạp chí quốc tế uy tín phải đạt 1,5 điểm trở lên và điểm các bài báo khoa học thay thế này không được tính vào tổng điểm công trì khoa học quy đổi tối thiểu. Chú thích: (*): Đối với ngành KH sức khoẻ, 1 luận văn chuyên khoa/bác sĩ nội trú ~ 1 thạc sĩ (**): Sau khi đạt chức danh phó giáo sư (***): Sau khi bảo vệ thành công luận án tiến sĩ (****): Trước năm 2018, nhiều giảng viên đã chuẩn bị hồ sơ theo chuẩn cũ, vốn nhẹ hơn → Vì vậy, mục a) cho phép những người đã đủ chuẩn theo tiêu chí cũ được xét nốt trong thời gian chuyển tiếp (trước ngày 01/01/2020). Từ năm 2020, Việt Nam chính thức áp dụng chuẩn bài báo quốc tế nghiêm ngặt hơn → Do đó, mục b) đặt ra tiêu chuẩn chất lượng cao hơn, nghiêm ngặt hơn, đúng với định hướng nâng tầm đội ngũ giáo sư, phó giáo sư. *Căn cứ pháp lý rõ ràng và có lộ trình thực thi Quyết định 37/2018/QĐ-TTg được ban hành tháng 8/2018, nhưng cho phép đến 01/01/2020 mới chính thức áp dụng toàn bộ chuẩn mới. Giúp các trường đại học, viện nghiên cứu và cá nhân ứng viên có thời gian điều chỉnh. Tránh áp lực đột ngột, đảm bảo tính công bằng cho những người nộp hồ sơ giai đoạn 2018–2019.",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Lưu ý về tiêu chuẩn bài báo và quy định chuyển tiếp: Chỉ chấp nhận bài báo công bố trên tạp chí khoa học quốc tế uy tín để tính cho tiêu chuẩn GS/PGS. Riêng KH quân sự, an ninh liên quan bí mật nhà nước thuộc lĩnh vực quốc phòng, an ninh được thay thế bằng bài báo khoa học uy tín của ngành Khoa học Quân sự và An ninh (bài báo thay thế), với tổng điểm đạt 1,5 trở lên, không tính vào tổng điểm công trình khoa học quy đổi tối thiểu. Các chú thích (*) đến (*) giải thích tương đương luận văn chuyên khoa/bác sĩ nội trú ~ 1 thạc sĩ, sau đạt PGS, sau bảo vệ luận án tiến sĩ. Lộ trình áp dụng Quyết định 37/2018/QĐ-TTg: Trước 01/01/2020 áp dụng chuẩn cũ để đảm bảo công bằng cho người nộp hồ sơ 2018–2019, từ năm 2020 áp dụng chuẩn bài báo quốc tế nghiêm ngặt hơn.",
+    "is_logical": true,
+    "row_type": "annotation",
+    "metadata": {
+      "Tiêu chí": "Lưu ý: - Bài báo khoa học: tất cả phải được công bố trên các tạp chí khoa học quốc tế uy tín, mới được tính để xét tiêu chuẩn GS/PGS - Đối với KH quân sự, KH an ninh liên quan đến bí mật nhà nước thuộc lĩnh vực quốc phòng, an ninh được thay thế bằng các bài báo khoa học công bố trên các tập chí khoa học uy tín của ngành Khoa học Quân sự và Khoa học An ninh (bài báo thay thế) - Tổng điểm bài báo thay thế cho các bài báo khoa học trên tạp chí quốc tế uy tín phải đạt 1,5 điểm trở lên và điểm các bài báo khoa học thay thế này không được tính vào tổng điểm công trì khoa học quy đổi tối thiểu. Chú thích: (*): Đối với ngành KH sức khoẻ, 1 luận văn chuyên khoa/bác sĩ nội trú ~ 1 thạc sĩ (**): Sau khi đạt chức danh phó giáo sư (***): Sau khi bảo vệ thành công luận án tiến sĩ (****): Trước năm 2018, nhiều giảng viên đã chuẩn bị hồ sơ theo chuẩn cũ, vốn nhẹ hơn → Vì vậy, mục a) cho phép những người đã đủ chuẩn theo tiêu chí cũ được xét nốt trong thời gian chuyển tiếp (trước ngày 01/01/2020). Từ năm 2020, Việt Nam chính thức áp dụng chuẩn bài báo quốc tế nghiêm ngặt hơn → Do đó, mục b) đặt ra tiêu chuẩn chất lượng cao hơn, nghiêm ngặt hơn, đúng với định hướng nâng tầm đội ngũ giáo sư, phó giáo sư. *Căn cứ pháp lý rõ ràng và có lộ trình thực thi Quyết định 37/2018/QĐ-TTg được ban hành tháng 8/2018, nhưng cho phép đến 01/01/2020 mới chính thức áp dụng toàn bộ chuẩn mới. Giúp các trường đại học, viện nghiên cứu và cá nhân ứng viên có thời gian điều chỉnh. Tránh áp lực đột ngột, đảm bảo tính công bằng cho những người nộp hồ sơ giai đoạn 2018–2019.",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  },
+  {
+    "description_for_rag": "Công trình khoa học được tính điểm quy đổi bao gồm: bài báo, kết quả nghiên cứu ứng dụng KH&CN đăng ký độc quyền sáng chế, giải pháp hữu ích được ứng dụng hiệu quả, sách phục vụ đào tạo được hội đồng thẩm định và xuất bản uy tín (từ trình độ Đại học trở lên, chương sách do NXB uy tín thế giới), báo cáo khoa học hội thảo quốc gia/quốc tế có ISBN, tác phẩm nghệ thuật/thể thao đạt giải cấp quốc gia/quốc tế. Điều kiện: phù hợp ngành/chuyên ngành ứng viên, có chất lượng, uy tín (báo khoa học cần rõ chỉ số/trích dẫn). Không tính điểm: công trình trùng lặp >30%, bài báo phổ biến/tổng kết/nhận xét. Cách tính điểm: Tác giả chính 1/3 tổng điểm, tổng điểm còn lại chia đều cho tất cả tác giả.",
+    "is_logical": true,
+    "row_type": "annotation",
+    "metadata": {
+      "Tiêu chí": "+ Công trình khoa học được tính điểm quy đổi (1) Gồm các loại sau: a) Bài báo khoa học. b) Kết quả nghiên cứu, ứng dụng KH&CN đã đăng ký độc quyền sáng chế. c) Giải pháp hữu ích được ứng dụng hiệu quả. d) Sách phục vụ đào tạo được hội đồng thẩm định và xuất bản uy tín sử dụng đào tạo từ trình độ Đại học trở lên. Chương sách do nhà xuất bản uy tín thế giới. đ) Báo cáo khoa học tại hội thảo quốc gia/quốc tế có mã số chuẩn quốc tế (ISBN). e) Tác phẩm nghệ thuật, thành tích thể thao đạt giải cấp quốc gia/quốc tế.\" (2) Điều kiện được tính điểm: Phù hợp ngành/chuyên ngành của ứng viên. Phải có chất lượng, uy tín; báo khoa học cần rõ chỉ số và trích dẫn. (3) Không tính điểm: Công trình trùng lặp >30%. Bài báo phổ biến, tổng kết, nhận xét… không phải công trình khoa học. + Cách tính điểm cho tác giả Tác giả chính: được tính 1/3 tổng điểm công trình. Tổng điểm còn lại chia đều cho tất cả các tác giả (bao gồm cả tác giả chính). Nếu không rõ ai là tác giả chính: chia đều cho tất cả tác giả.",
+      "sheet_source": "Tiêu chuẩn chức danh"
+    }
+  }
+]

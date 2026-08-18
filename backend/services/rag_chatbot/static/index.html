@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant | Quản Lý Khoa Học</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-microscope"></i>
+                <span>SciManage <span>AI</span></span>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-item active"><i class="fas fa-comment-dots"></i> Trò chuyện</div>
+                <div class="nav-item"><i class="fas fa-book"></i> Danh mục tạp chí</div>
+                <div class="nav-item"><i class="fas fa-calculator"></i> Tính điểm GS/PGS</div>
+                <div class="nav-item"><i class="fas fa-gear"></i> Cấu hình</div>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="https://ui-avatars.com/api/?name=Admin&background=random" alt="User">
+                    <div class="user-details">
+                        <p class="name">Quản trị viên</p>
+                        <p class="status">Online</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+            <header class="chat-header">
+                <div class="header-info">
+                    <h1>Trợ lý Khoa học AI</h1>
+                    <p>Tra cứu tạp chí, điểm quy đổi và quy định khoa học</p>
+                </div>
+                <div class="header-actions">
+                    <button id="clear-chat" title="Xóa lịch sử"><i class="fas fa-trash-alt"></i></button>
+                    <button id="toggle-theme" title="Đổi giao diện"><i class="fas fa-moon"></i></button>
+                </div>
+            </header>
+
+            <div id="chat-messages" class="chat-messages">
+                <div class="message system">
+                    <div class="message-content">
+                        Xin chào! Tôi là Trợ lý AI chuyên trách về Quản lý Khoa học. Tôi có thể giúp bạn tra cứu danh mục tạp chí mới nhất 2026, tính điểm quy đổi hoặc giải đáp các quy định về chức danh GS/PGS.
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="input-wrapper">
+                    <textarea id="user-input" placeholder="Nhập câu hỏi của bạn tại đây..." rows="1"></textarea>
+                    <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+                <p class="input-hint">AI có thể nhầm lẫn. Vui lòng kiểm tra lại thông tin quan trọng.</p>
+            </div>
+        </main>
+
+        <!-- Right Info Panel -->
+        <section class="info-panel">
+            <div class="panel-header">
+                <h3><i class="fas fa-quote-left"></i> Trích dẫn & Nguồn</h3>
+            </div>
+            <div id="citations-list" class="citations-list">
+                <div class="empty-citations">
+                    <i class="fas fa-search"></i>
+                    <p>Các trích dẫn pháp lý sẽ hiển thị tại đây.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

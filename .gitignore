@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments & Dependencies
+.env
+.env.*
+!.env.example
+!.env.docker.example
+venv/
+env/
+ENV/
+.venv/
+
+# Node & Frontend Build
+node_modules/
+dist/
+build/
+.vite/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Databases & Vector DB storage
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+backend/data/*.db
+qdrant_storage/
+postgres_data/
+
+# Temporary / Scratch / Logs / Reports
+scratch/
+*.log
+backend.log
+backend/backend.log
+backend/latest_validation_report.md
+temp/
+tmp/
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+backend/services/rag_chatbot/data/chunks_embedded.json
