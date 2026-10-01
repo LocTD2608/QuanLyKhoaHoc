@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional, Dict, Any
+from typing import List, Optional, Dict, Any, Union
 
 class LoginRequest(BaseModel):
     username: str
@@ -17,7 +17,7 @@ class PaperCreate(BaseModel):
     # Maps str(author_id) -> role: 'main' | 'member' | 'corresponding'
     author_roles: Optional[Dict[str, str]] = None
     ranking: Optional[str] = None
-    sjr_score: Optional[float] = None
+    sjr_score: Optional[Union[float, str]] = None
     issn: Optional[str] = ""
     notes: Optional[str] = ""
     is_ai_verified: Optional[bool] = True
@@ -204,3 +204,61 @@ class ScholarPaperImportItem(BaseModel):
 
 class BulkPaperImportRequest(BaseModel):
     papers: List[ScholarPaperImportItem]
+
+# --- OCR & Vision Schemas ---
+class OCRExtractedAuthor(BaseModel):
+    name: str
+    order: int = 1
+    email: Optional[str] = None
+    affiliation: Optional[str] = None
+    is_first_author: bool = False
+    is_corresponding: bool = False
+    is_co_first: bool = False
+    marker: Optional[str] = None
+
+class OCRArticleExtractResponse(BaseModel):
+    document_type: str = "article_first_page"
+    title_en: Optional[str] = None
+    title_vn: Optional[str] = None
+    doi: Optional[str] = None
+    journal_name: Optional[str] = None
+    issn: Optional[str] = None
+    year: Optional[int] = None
+    volume: Optional[str] = None
+    issue: Optional[str] = None
+    pages: Optional[str] = None
+    publisher: Optional[str] = None
+    authors: List[OCRExtractedAuthor] = []
+    abstract_snippet: Optional[str] = None
+    confidence_score: float = 0.9
+    notes: Optional[str] = None
+
+class OCRDeclarationItem(BaseModel):
+    item_no: Optional[int] = None
+    title: str
+    journal_name: Optional[str] = ""
+    year: Optional[int] = None
+    doi: Optional[str] = None
+    role: Optional[str] = "main"
+    num_authors: Optional[int] = 1
+    claimed_score: Optional[float] = None
+
+class OCRDeclarationResponse(BaseModel):
+    document_type: str = "declaration_form"
+    candidate_name: Optional[str] = None
+    academic_field: Optional[str] = None
+    target_title: Optional[str] = None
+    items: List[OCRDeclarationItem] = []
+    confidence_score: float = 0.9
+
+class OCRValidationResponse(BaseModel):
+    ocr_result: Dict[str, Any]
+    has_doi: bool = False
+    extracted_doi: Optional[str] = None
+    crossref_matched: bool = False
+    crossref_metadata: Optional[Dict[str, Any]] = None
+    double_check_mismatches: List[str] = []
+    integrity: Optional[Dict[str, Any]] = None
+    author_role: Optional[Dict[str, Any]] = None
+    report_markdown: Optional[str] = None
+

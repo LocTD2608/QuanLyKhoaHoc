@@ -161,13 +161,16 @@ def migrate_data(session: Session, json_path: Path):
 
 def sync_dict_to_sql(session: Session, data: Dict[str, Any]):
     """Sync data dictionary to SQL tables."""
-    # Similar to migrate_data but accepting dict
-    temp_json = Path("/tmp/temp_sync.json")
-    with open(temp_json, "w", encoding="utf-8") as f:
-        json.dump(data, f)
-    migrate_data(session, temp_json)
-    if temp_json.exists():
-        temp_json.unlink()
+    import tempfile
+    with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False, encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False)
+        temp_json = Path(f.name)
+    try:
+        migrate_data(session, temp_json)
+    finally:
+        if temp_json.exists():
+            temp_json.unlink()
+
 
 if __name__ == "__main__":
     from core.database import SessionLocal, init_db

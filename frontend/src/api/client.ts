@@ -4,10 +4,13 @@ export const BASE = `${API_ORIGIN}/api`;
 export async function request<T = any>(path: string, opts: RequestInit = {}): Promise<T> {
   const token = localStorage.getItem('auth_token');
   const headers: Record<string, string> = {
-    'Content-Type': 'application/json',
     ...(opts.headers as Record<string, string>),
   };
+  if (!(opts.body instanceof FormData)) {
+    headers['Content-Type'] = 'application/json';
+  }
   if (token) headers['Authorization'] = `Bearer ${token}`;
+
   
   const res = await fetch(BASE + path, { ...opts, headers });
   
@@ -25,7 +28,13 @@ export async function request<T = any>(path: string, opts: RequestInit = {}): Pr
   }
   if (!res.ok) {
     const err = await res.json().catch(() => ({ detail: res.statusText }));
-    throw new Error(err.detail || 'Request failed');
+    let detailMsg = 'Request failed';
+    if (Array.isArray(err?.detail)) {
+      detailMsg = err.detail.map((d: any) => `${d.loc ? d.loc.slice(-1)[0] : ''}: ${d.msg}`).join(', ');
+    } else if (typeof err?.detail === 'string') {
+      detailMsg = err.detail;
+    }
+    throw new Error(detailMsg);
   }
   if (res.status === 204) return null as unknown as T;
   return res.json();

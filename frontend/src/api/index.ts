@@ -92,3 +92,29 @@ export async function aiConsult(targetTitle: string, academicField: string, eval
     body: json({ target_title: targetTitle, academic_field: academicField, eval_year: evalYear, inputs }),
   });
 }
+
+import { OCRArticleExtractResult, OCRDeclarationResult, OCRValidationResult } from '../types/ocr.types';
+
+export const ocrApi = {
+  extractPage: (file: File, docType: string = 'auto') => {
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('doc_type', docType);
+    return request<OCRArticleExtractResult | OCRDeclarationResult>('/v1/ocr/extract-page', {
+      method: 'POST',
+      body: formData,
+    });
+  },
+  validateFromImage: (file: File, candidateName: string, candidateTitleVn: string = '', docType: string = 'article_first_page') => {
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('candidate_name', candidateName);
+    formData.append('candidate_title_vn', candidateTitleVn);
+    formData.append('doc_type', docType);
+    return request<OCRValidationResult>('/v1/ocr/validate-from-image', {
+      method: 'POST',
+      body: formData,
+    });
+  },
+};
+

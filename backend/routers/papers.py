@@ -74,46 +74,67 @@ def get_paper(paper_id: int, user=Depends(get_current_user)):
 async def create_paper(req: PaperCreate, user=Depends(get_current_user)):
     db = load_db()
     paper = req.dict()
+    if paper.get("sjr_score") is not None:
+        try:
+            paper["sjr_score"] = float(str(paper["sjr_score"]).replace(",", ".").strip())
+        except Exception:
+            paper["sjr_score"] = 1.0
     
     if paper["status"] == "published":
-        if not paper.get("doi") or not paper["doi"].strip():
-            raise HTTPException(400, "Bài báo đã xuất bản bắt buộc phải có mã DOI để xác thực.")
-        
         author = next((a for a in db["authors"] if a["id"] == user.get("author_id")), None)
         if not author:
             raise HTTPException(400, "Tài khoản người dùng chưa liên kết với hồ sơ tác giả nào.")
             
         candidate_name = author["name"]
         candidate_history = [author.get("affiliation", "")]
-        
-        try:
-            report = await validation_flow.run_validation(
-                doi=paper["doi"].strip(),
-                url="",
-                candidate_name=candidate_name,
-                candidate_title_vn=paper.get("title", ""),
-                candidate_history=candidate_history
-            )
-        except Exception as e:
-            raise HTTPException(500, f"Lỗi xác thực AI: {str(e)}")
+        has_doi = bool(paper.get("doi") and paper["doi"].strip())
+
+        if has_doi:
+            try:
+                report = await validation_flow.run_validation(
+                    doi=paper["doi"].strip(),
+                    url="",
+                    candidate_name=candidate_name,
+                    candidate_title_vn=paper.get("title", ""),
+                    candidate_history=candidate_history
+                )
+            except Exception as e:
+                report = {"metadata": None, "verification": {}}
+        else:
+            report = {"metadata": None, "verification": {}}
             
-        if not report.get("metadata"):
-            raise HTTPException(400, "Không thể tìm thấy siêu dữ liệu (metadata) của bài báo từ DOI cung cấp.")
+        metadata = report.get("metadata")
+        if not metadata:
+            if paper.get("title") and paper.get("journal_name"):
+                metadata = {
+                    "title": paper.get("title"),
+                    "journal": paper.get("journal_name"),
+                    "issn": [paper.get("issn")] if paper.get("issn") else [],
+                    "year": paper.get("year") or datetime.now().year,
+                    "authors": []
+                }
+            else:
+                raise HTTPException(400, "Không thể tìm thấy siêu dữ liệu (metadata) của bài báo. Vui lòng cung cấp DOI hoặc tên bài báo và tạp chí.")
             
-        metadata = report["metadata"]
-        verification = report["verification"]
+        verification = report.get("verification", {})
         integrity = verification.get("integrity", {})
         author_role_data = verification.get("author_role", {})
         
-        role = AuthorRole.MAIN if author_role_data.get("is_main_author") else AuthorRole.MEMBER
+        # Determine role from user input or AI
+        if paper.get("author_roles") and str(author["id"]) in paper["author_roles"]:
+            user_assigned_role = paper["author_roles"][str(author["id"])]
+            role = AuthorRole.MAIN if user_assigned_role in ("main", "corresponding") else AuthorRole.MEMBER
+        else:
+            role = AuthorRole.MAIN if author_role_data.get("is_main_author") else AuthorRole.MEMBER
+            
         authors_meta = metadata.get("authors", [])
         
         # Compute AI-derived values for scoring
-        ai_title = metadata.get("title", "Untitled")
-        ai_journal = metadata.get("journal", "Unknown Journal")
+        ai_title = metadata.get("title", paper.get("title", "Untitled"))
+        ai_journal = metadata.get("journal", paper.get("journal_name", "Unknown Journal"))
         ai_issn_list = metadata.get("issn", [])
-        ai_issn = ai_issn_list[0] if ai_issn_list else ""
-        ai_year = metadata.get("year") or datetime.now().year
+        ai_issn = ai_issn_list[0] if ai_issn_list else paper.get("issn", "")
+        ai_year = metadata.get("year") or paper.get("year") or datetime.now().year
 
         # Calculate score using AI metadata (always use AI data for scoring accuracy)
         academic_field = author.get("academic_field") or "Công nghệ thông tin"
@@ -121,7 +142,7 @@ async def create_paper(req: PaperCreate, user=Depends(get_current_user)):
             journal_name=ai_journal,
             issn=ai_issn,
             author_role=role,
-            num_authors=len(authors_meta) if authors_meta else 1,
+            num_authors=len(authors_meta) if authors_meta else (len(paper.get("author_ids", [])) or 1),
             academic_field=academic_field,
             pub_year=ai_year,
             eval_year=2026,
@@ -130,11 +151,11 @@ async def create_paper(req: PaperCreate, user=Depends(get_current_user)):
         
         score_result = scoring_engine.calculate_score(article_input)
         j = score_result.journal
-        ai_ranking = (j.sjr_quartile or j.domestic_rank or "Q1") if j else "Q1"
+        ai_ranking = paper.get("ranking") or ((j.sjr_quartile or j.domestic_rank or "Q1") if j else "Q1")
         if j and j.category.value.startswith("conf"):
             ai_ranking = j.category.value
             
-        sjr_score = (j.jcr_if or 1.0) if j else 1.0
+        sjr_score = paper.get("sjr_score") or ((j.jcr_if or 1.0) if j else 1.0)
 
         # Compare user-submitted data against AI metadata
         mismatches = _compare_with_ai(paper, metadata, ai_ranking)
@@ -155,6 +176,10 @@ async def create_paper(req: PaperCreate, user=Depends(get_current_user)):
         paper["ai_mismatches"] = mismatches
         paper["is_ai_verified"] = len(mismatches) == 0
         paper["sjr_score"] = sjr_score
+        paper["calculated_score"] = score_result.final_score
+        paper["max_score"] = score_result.max_score
+        paper["is_within_3_years"] = score_result.is_in_last_3_years
+        
         # Store AI metadata for frontend reference
         paper["ai_metadata"] = {
             "title": ai_title,
@@ -165,9 +190,9 @@ async def create_paper(req: PaperCreate, user=Depends(get_current_user)):
         }
         
         # Map matched authors in system (by name)
-        author_ids = []
-        is_user_present = author_role_data.get("is_present", False)
-        if is_user_present:
+        author_ids = list(paper.get("author_ids") or [])
+        is_user_present = author_role_data.get("is_present", True)
+        if is_user_present and author["id"] not in author_ids:
             author_ids.append(author["id"])
 
         for auth in authors_meta:
@@ -181,17 +206,19 @@ async def create_paper(req: PaperCreate, user=Depends(get_current_user)):
         paper["author_ids"] = list(set(author_ids))
 
         # Determine roles
-        if is_user_present and role == AuthorRole.MAIN:
+        if role == AuthorRole.MAIN:
             paper["main_author_id"] = author["id"]
+        elif paper.get("main_author_id"):
+            pass
         elif paper["author_ids"]:
             other_ids = [aid for aid in paper["author_ids"] if aid != author["id"]]
-            paper["main_author_id"] = other_ids[0] if other_ids else None
+            paper["main_author_id"] = other_ids[0] if other_ids else author["id"]
         else:
             paper["main_author_id"] = None
 
-        if is_user_present and author_role_data.get("is_corresponding_author"):
+        if author_role_data.get("is_corresponding_author") or (paper.get("author_roles") and paper["author_roles"].get(str(author["id"])) == "corresponding"):
             paper["corresponding_author_id"] = author["id"]
-        else:
+        elif not paper.get("corresponding_author_id"):
             paper["corresponding_author_id"] = None
 
         if mismatches:

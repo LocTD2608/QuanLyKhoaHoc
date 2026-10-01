@@ -48,7 +48,9 @@ export interface Paper {
   author_ids: number[];
   main_author_id?: number;
   corresponding_author_id?: number;
+  author_roles?: Record<string, string>;
   authors?: Author[];
+
   main_author?: Author;
   calculated_score?: number;
   max_score?: number;

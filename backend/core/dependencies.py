@@ -17,10 +17,13 @@ from services.scoring.data_processor import normalize_name
 
 logger = logging.getLogger(__name__)
 
+from services.ai_extraction.ocr_vision_service import ocr_vision_service
+
 # ── Service Singletons ─────────────────────────────────────
 integrity_checker = IntegrityChecker()
 validation_flow = ArticleValidationFlow()
 scoring_engine = JournalScoringEngine.from_default()
+
 
 # ── Custom Venues Registration ─────────────────────────────
 def register_custom_venues():

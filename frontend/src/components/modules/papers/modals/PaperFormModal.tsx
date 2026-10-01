@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { Paper, Author, PaperFormData } from '../../../../types';
 import { Modal } from '../../../common/Modal';
-import { papersApi, validateArticle } from '../../../../api';
+import { papersApi, validateArticle, ocrApi } from '../../../../api';
 import { showToast } from '../../../../utils/toast';
 
 interface PaperFormModalProps {
@@ -12,6 +12,7 @@ interface PaperFormModalProps {
   allAuthors: Author[];
   currentUserName: string;
   onSuccess: () => void;
+  onSwitchToAi?: () => void;
 }
 
 const emptyForm: PaperFormData = {
@@ -37,11 +38,14 @@ export const PaperFormModal: React.FC<PaperFormModalProps> = ({
   allAuthors,
   currentUserName,
   onSuccess,
+  onSwitchToAi,
 }) => {
   const [form, setForm] = useState<PaperFormData>({ ...emptyForm });
   const [saving, setSaving] = useState(false);
   const [autofilling, setAutofilling] = useState(false);
+  const [ocrScanning, setOcrScanning] = useState(false);
   const [aiDoi, setAiDoi] = useState('');
+  const fileInputRef = React.useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
     if (editingPaper) {
@@ -66,6 +70,81 @@ export const PaperFormModal: React.FC<PaperFormModalProps> = ({
       setAiDoi('');
     }
   }, [editingPaper, isOpen]);
+
+  const handleOcrFileSelect = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    try {
+      setOcrScanning(true);
+      const res: any = await ocrApi.extractPage(file, 'article_first_page');
+      if (!res) throw new Error('Không nhận được phản hồi từ Vision AI');
+
+      setForm((prev) => {
+        const updated = { ...prev };
+        if (res.title_en || res.title_vn) {
+          updated.title = res.title_en || res.title_vn;
+        }
+        if (res.journal_name) {
+          updated.journal_name = res.journal_name;
+        }
+        if (res.doi) {
+          updated.doi = res.doi;
+          setAiDoi(res.doi);
+        }
+        if (res.year) {
+          updated.year = res.year;
+        }
+        if (res.issn) {
+          updated.issn = res.issn;
+        }
+
+        // Tự động đối soát tác giả nếu có
+        if (res.authors && Array.isArray(res.authors) && allAuthors.length > 0) {
+          const matchedIds: number[] = [...prev.author_ids];
+          const newRoles = { ...prev.author_roles };
+          let mainId = prev.main_author_id;
+          let corrId = prev.corresponding_author_id;
+
+          for (const ocrAuth of res.authors) {
+            const authName = (ocrAuth.name || '').toLowerCase().trim();
+            const found = allAuthors.find((a) => {
+              const n = a.name.toLowerCase().trim();
+              return n === authName || n.includes(authName) || authName.includes(n);
+            });
+            if (found) {
+              if (!matchedIds.includes(found.id)) {
+                matchedIds.push(found.id);
+              }
+              if (ocrAuth.is_first_author) {
+                mainId = found.id;
+                newRoles[found.id] = 'main';
+              } else if (ocrAuth.is_corresponding) {
+                corrId = found.id;
+                newRoles[found.id] = 'corresponding';
+              } else if (!newRoles[found.id]) {
+                newRoles[found.id] = 'member';
+              }
+            }
+          }
+          updated.author_ids = matchedIds;
+          updated.author_roles = newRoles;
+          if (mainId) updated.main_author_id = mainId;
+          if (corrId) updated.corresponding_author_id = corrId;
+        }
+
+        return updated;
+      });
+
+      showToast('Đã quét và tự động điền dữ liệu bài báo từ hình ảnh!', 'success');
+    } catch (err: any) {
+      console.error(err);
+      showToast(err.message || 'Lỗi khi quét ảnh bài báo', 'error');
+    } finally {
+      setOcrScanning(false);
+      if (fileInputRef.current) fileInputRef.current.value = '';
+    }
+  };
 
   const handleAiAutofill = async () => {
     const doiToQuery = aiDoi.trim() || form.doi.trim();
@@ -98,6 +177,7 @@ export const PaperFormModal: React.FC<PaperFormModalProps> = ({
       setAutofilling(false);
     }
   };
+
 
   const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -151,28 +231,106 @@ export const PaperFormModal: React.FC<PaperFormModalProps> = ({
       maxWidth="720px"
     >
       <form onSubmit={handleSave}>
-        {/* AI Autofill Bar */}
+        {!editingPaper && onSwitchToAi && (
+          <div
+            style={{
+              background: '#f8fafc',
+              border: '1px solid #cbd5e1',
+              borderRadius: '8px',
+              padding: '0.625rem 0.875rem',
+              marginBottom: '1rem',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '0.75rem',
+              flexWrap: 'wrap',
+            }}
+          >
+            <div style={{ fontSize: '0.825rem', color: '#334155' }}>
+              💡 Có ảnh bài báo hoặc mã DOI? Hãy sử dụng <strong>Khai báo & Thẩm định AI</strong> để tự động kiểm tra liêm chính và tính điểm HĐGSNN.
+            </div>
+            <button
+              type="button"
+              onClick={() => {
+                onClose();
+                onSwitchToAi();
+              }}
+              style={{
+                padding: '4px 12px',
+                borderRadius: '6px',
+                border: 'none',
+                background: '#4f46e5',
+                color: 'white',
+                fontSize: '0.78rem',
+                fontWeight: 600,
+                cursor: 'pointer',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Chuyển sang Khai báo AI
+            </button>
+          </div>
+        )}
+
+        {/* AI & Vision Autofill Bar */}
         <div
           style={{
-            background: 'linear-gradient(135deg, #eef2ff, #f5f3ff)',
+            background: 'linear-gradient(135deg, #eef2ff, #f0fdf4)',
             border: '1px solid #c7d2fe',
             borderRadius: '10px',
             padding: '0.875rem 1rem',
             marginBottom: '1.25rem',
             display: 'flex',
-            alignItems: 'center',
+            flexDirection: 'column',
             gap: '0.75rem',
           }}
         >
-          <i className="fa-solid fa-wand-magic-sparkles" style={{ color: '#6366f1', fontSize: '1.1rem' }} />
-          <div style={{ flex: 1 }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <span style={{ fontSize: '0.825rem', fontWeight: 600, color: '#334155', display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <i className="fa-solid fa-wand-magic-sparkles" style={{ color: '#6366f1' }} />
+              Tự động trích xuất thông tin bài báo
+            </span>
+
+            {/* Hidden file input for OCR */}
+            <input
+              type="file"
+              ref={fileInputRef}
+              accept="image/*,application/pdf"
+              style={{ display: 'none' }}
+              onChange={handleOcrFileSelect}
+            />
+
+            <button
+              type="button"
+              onClick={() => fileInputRef.current?.click()}
+              disabled={ocrScanning}
+              style={{
+                padding: '0.4rem 0.85rem',
+                borderRadius: '6px',
+                border: '1px solid #059669',
+                background: '#ecfdf5',
+                color: '#047857',
+                fontSize: '0.8rem',
+                fontWeight: 600,
+                cursor: ocrScanning ? 'not-allowed' : 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+              }}
+            >
+              {ocrScanning ? <i className="fa-solid fa-spinner fa-spin" /> : <i className="fa-solid fa-camera" />}
+              📸 Quét từ ảnh trang đầu (Vision OCR)
+            </button>
+          </div>
+
+          <div style={{ display: 'flex', gap: '8px' }}>
             <input
               type="text"
-              placeholder="Nhập DOI (vd: 10.1016/j.neucom.2023.126584) để AI tự điền"
+              placeholder="Hoặc nhập mã DOI (vd: 10.1016/j.neucom.2023.126584)"
               value={aiDoi}
               onChange={(e) => setAiDoi(e.target.value)}
               style={{
-                width: '100%',
+                flex: 1,
                 padding: '0.45rem 0.75rem',
                 borderRadius: '6px',
                 border: '1px solid #c7d2fe',
@@ -180,29 +338,30 @@ export const PaperFormModal: React.FC<PaperFormModalProps> = ({
                 background: 'white',
               }}
             />
+            <button
+              type="button"
+              onClick={handleAiAutofill}
+              disabled={autofilling}
+              style={{
+                padding: '0.45rem 0.875rem',
+                borderRadius: '6px',
+                border: 'none',
+                background: '#4f46e5',
+                color: 'white',
+                fontSize: '0.825rem',
+                fontWeight: 600,
+                cursor: autofilling ? 'not-allowed' : 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+              }}
+            >
+              {autofilling ? <i className="fa-solid fa-spinner fa-spin" /> : <i className="fa-solid fa-bolt" />}
+              Điền từ DOI
+            </button>
           </div>
-          <button
-            type="button"
-            onClick={handleAiAutofill}
-            disabled={autofilling}
-            style={{
-              padding: '0.45rem 0.875rem',
-              borderRadius: '6px',
-              border: 'none',
-              background: '#4f46e5',
-              color: 'white',
-              fontSize: '0.825rem',
-              fontWeight: 600,
-              cursor: autofilling ? 'not-allowed' : 'pointer',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '6px',
-            }}
-          >
-            {autofilling ? <i className="fa-solid fa-spinner fa-spin" /> : <i className="fa-solid fa-bolt" />}
-            AI Trích xuất
-          </button>
         </div>
+
 
         {/* Form Fields */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -212,6 +371,9 @@ export const PaperFormModal: React.FC<PaperFormModalProps> = ({
             </label>
             <input
               type="text"
+              id="paper-title-input"
+              name="title"
+              placeholder="Nhập tiêu đề bài báo..."
               required
               value={form.title}
               onChange={(e) => setForm({ ...form, title: e.target.value })}

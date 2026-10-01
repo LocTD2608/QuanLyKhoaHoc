@@ -3,9 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.pytest_cache/
-.coverage
-htmlcov/
 
 # Environments & Dependencies
 .env
@@ -57,3 +54,36 @@ Thumbs.db
 !.vscode/launch.json
 !.vscode/extensions.json
 backend/services/rag_chatbot/data/chunks_embedded.json
+
+# -------------------------------------------------------------
+# Test files, test scripts, screenshots & testing artifacts
+# -------------------------------------------------------------
+# Test runners cache & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+.nyc_output/
+
+# End-to-end / Playwright / Cypress test outputs & reports
+test_screenshots/
+test-results/
+playwright-report/
+blob-report/
+*.test.png
+*.spec.png
+screenshot_*.png
+
+# Sample image files generated for tests
+sample_declaration_form.png
+sample_paper_cover.png
+
+# Automated test scripts & debugging scripts
+backend/scripts/test_*.py
+backend/scripts/e2e_test_*.py
+backend/scripts/debug_*.py
+backend/scripts/screenshot_*.py
+backend/scripts/generate_sample_*.py
+test_*.py
+tests/__pycache__/

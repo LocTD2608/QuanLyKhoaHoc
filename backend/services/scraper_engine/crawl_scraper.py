@@ -1,5 +1,8 @@
-import asyncio
-from crawl4ai import AsyncWebCrawler
+try:
+    from crawl4ai import AsyncWebCrawler
+except ImportError:
+    AsyncWebCrawler = None
+
 from pydantic import BaseModel, Field
 from typing import List, Optional
 
@@ -13,7 +16,10 @@ class PaperDetails(BaseModel):
     authors: List[AuthorInfo]
 
 async def crawl_paper(url: str):
+    if not AsyncWebCrawler:
+        return None
     async with AsyncWebCrawler(verbose=True) as crawler:
+
         # We use a simple crawl first to get markdown content
         result = await crawler.arun(
             url=url,

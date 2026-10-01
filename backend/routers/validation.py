@@ -1,18 +1,21 @@
-import json
 import traceback
-from fastapi import APIRouter, HTTPException
+from datetime import datetime
+from fastapi import APIRouter, HTTPException, UploadFile, File, Form
+from thefuzz import fuzz
 
-from core.dependencies import integrity_checker, scoring_engine, validation_flow
+from core.dependencies import integrity_checker, scoring_engine, validation_flow, ocr_vision_service
 from core.schemas import (
     JournalCheckRequest, TitleSimilarityRequest, FieldClassificationRequest,
     AffiliationMatchRequest, ArticleValidationRequest, SimulatorRequest,
     SimulatorResponse, CVExtractionRequest, AIConsultRequest,
     SummaryScorecard, ScorecardItem, ArticleTableItem,
-    WeightedScoringRequest, WeightedScoringResponse
+    WeightedScoringRequest, WeightedScoringResponse, OCRValidationResponse
 )
 from services.scoring.lookup import lookup_journal
 from services.scoring.models import ArticleInput, AuthorRole, ScoringStatus
 from services.scoring.engine import calculate_weighted_author_score
+from services.ai_extraction.author_disambiguation import match_author_names
+
 
 router = APIRouter()
 
@@ -384,3 +387,182 @@ async def get_weighted_score(req: WeightedScoringRequest):
     except Exception as e:
         traceback.print_exc()
         raise HTTPException(500, str(e))
+
+
+# ── OCR & Multimodal Vision Endpoints ──────────────────────
+@router.post("/v1/ocr/extract-page")
+async def ocr_extract_page(
+    file: UploadFile = File(...),
+    doc_type: str = Form("auto")
+):
+    """
+    Trích xuất siêu dữ liệu từ ảnh chụp/scan trang đầu bài báo hoặc tờ khai công trình.
+    """
+    try:
+        content = await file.read()
+        mime_type = file.content_type or "image/jpeg"
+        res = await ocr_vision_service.extract_from_file_bytes(content, mime_type=mime_type, doc_type=doc_type)
+        return res
+    except Exception as e:
+        traceback.print_exc()
+        raise HTTPException(500, f"Lỗi OCR thị giác: {str(e)}")
+
+
+@router.post("/v1/ocr/validate-from-image", response_model=OCRValidationResponse)
+async def ocr_validate_from_image(
+    file: UploadFile = File(...),
+    candidate_name: str = Form(...),
+    candidate_title_vn: str = Form(""),
+    doc_type: str = Form("article_first_page")
+):
+    """
+    Quy trình Đối soát toàn diện từ Ảnh chụp (One-Stop Vision Verification):
+    1. OCR trang đầu bài báo (bóc tách DOI, Tiêu đề, Tác giả, Vai trò, Affiliation).
+    2. Nếu có DOI: Chạy luồng Crossref + Đối soát chéo kép (Double Check) giữa ảnh và CSDL.
+    3. Nếu không có DOI: Thẩm định trực tiếp với CSDL HĐGSNN & Scimago.
+    """
+    try:
+        content = await file.read()
+        mime_type = file.content_type or "image/jpeg"
+        
+        # 1. OCR trích xuất thông tin
+        ocr_result = await ocr_vision_service.extract_from_file_bytes(content, mime_type=mime_type, doc_type=doc_type)
+        
+        extracted_doi = ocr_result.get("doi")
+        has_doi = bool(extracted_doi and extracted_doi.strip())
+        
+        crossref_matched = False
+        crossref_metadata = None
+        double_check_mismatches = []
+        integrity_data = None
+        author_role_data = None
+        report_markdown = None
+
+        if has_doi:
+            # 2A. Luồng có DOI: Chạy qua validation_flow
+            clean_doi = extracted_doi.strip()
+            try:
+                val_report = await validation_flow.run_validation(
+                    doi=clean_doi,
+                    url="",
+                    candidate_name=candidate_name,
+                    candidate_title_vn=candidate_title_vn or ocr_result.get("title_vn") or ocr_result.get("title_en") or ""
+                )
+                crossref_metadata = val_report.get("metadata")
+            except Exception as e:
+                crossref_metadata = None
+
+            if crossref_metadata:
+                crossref_matched = True
+                verification = val_report.get("verification", {})
+                integrity_data = verification.get("integrity") or {}
+                author_role_data = verification.get("author_role") or {}
+
+                # Đối soát chéo (Double check): So sánh ảnh chụp với Crossref
+                cr_title = crossref_metadata.get("title", "")
+                ocr_title = ocr_result.get("title_en") or ocr_result.get("title_vn") or ""
+                if cr_title and ocr_title:
+                    ratio = fuzz.token_sort_ratio(ocr_title.lower(), cr_title.lower())
+                    if ratio < 65:
+                        double_check_mismatches.append(
+                            f"Tiêu đề trên ảnh scan ('{ocr_title[:60]}...') không khớp với siêu dữ liệu Crossref ('{cr_title[:60]}...'). Vui lòng kiểm tra lại mã DOI."
+                        )
+
+                # So sánh tác giả
+                ocr_authors = [a.get("name", "") for a in ocr_result.get("authors", [])]
+                cr_authors = [f"{a.get('given', '')} {a.get('family', '')}".strip() for a in crossref_metadata.get("authors", [])]
+                
+                # Check candidate name in both
+                in_ocr = any(match_author_names(candidate_name, oa) for oa in ocr_authors)
+                in_cr = any(match_author_names(candidate_name, ca) for ca in cr_authors)
+                if in_ocr and not in_cr:
+                    double_check_mismatches.append(
+                        f"Tên ứng viên '{candidate_name}' có xuất hiện trên ảnh trang bìa nhưng không tìm thấy trong siêu dữ liệu Crossref."
+                    )
+
+                report_markdown = validation_flow.generate_markdown_report(val_report)
+            else:
+                double_check_mismatches.append(
+                    f"Mã DOI '{clean_doi}' trích xuất được từ ảnh không tìm thấy thông tin trên hệ thống Crossref quốc tế. Hệ thống chuyển sang giám định theo cơ sở dữ liệu nội bộ."
+                )
+
+        if not crossref_matched:
+            # 2B. Luồng không có DOI hoặc DOI không có trên Crossref
+            journal_name = ocr_result.get("journal_name") or ""
+            issn = ocr_result.get("issn")
+            year = ocr_result.get("year") or datetime.now().year
+            
+            integrity_data = integrity_checker.check_journal_integrity(
+                journal_name=journal_name,
+                issn_list=[issn] if issn else [],
+                year=year
+            )
+            
+            # Khảo sát tác giả từ OCR
+            matched_auth = None
+            for a in ocr_result.get("authors", []):
+                if match_author_names(candidate_name, a.get("name", "")):
+                    matched_auth = a
+                    break
+                    
+            if matched_auth:
+                author_role_data = {
+                    "is_present": True,
+                    "is_first_author": matched_auth.get("is_first_author", False),
+                    "is_corresponding_author": matched_auth.get("is_corresponding", False),
+                    "is_main_author": matched_auth.get("is_first_author", False) or matched_auth.get("is_corresponding", False),
+                    "affiliation_captured": matched_auth.get("affiliation"),
+                    "affiliation_match": None,
+                    "contribution_summary": None,
+                    "reason": "Xác định trực tiếp từ cấu trúc hình ảnh trang bìa."
+                }
+            else:
+                author_role_data = {
+                    "is_present": False,
+                    "is_first_author": False,
+                    "is_corresponding_author": False,
+                    "is_main_author": False,
+                    "affiliation_captured": None,
+                    "affiliation_match": None,
+                    "contribution_summary": None,
+                    "reason": f"Không tìm thấy tên ứng viên '{candidate_name}' trong danh sách tác giả trên ảnh."
+                }
+
+            ranking_info = (
+                integrity_data.get('ranking', {}).get('quartile')
+                if integrity_data.get('ranking')
+                else integrity_data.get('vietnam_info', {}).get('max_score', 'N/A')
+            )
+            report_markdown = f"""# 📄 Báo cáo Thẩm định Bài báo Khoa học (Qua Ảnh Chụp Trang Đầu)
+*Ngày tạo: {datetime.now().strftime("%d/%m/%Y %H:%M:%S")}*
+
+---
+## ℹ️ Thông tin Trích xuất từ Hình ảnh
+- **Tiêu đề**: {ocr_result.get('title_en') or ocr_result.get('title_vn') or 'N/A'}
+- **Tạp chí**: {journal_name} ({year})
+- **Tập/Số/Trang**: Tập {ocr_result.get('volume', 'N/A')}, Số {ocr_result.get('issue', 'N/A')}, Trang {ocr_result.get('pages', 'N/A')}
+- **Mã DOI**: {extracted_doi or 'Không phát hiện trên trang bìa'}
+- **Tác giả ghi nhận trên ảnh**: {', '.join([a.get('name', '') for a in ocr_result.get('authors', [])])}
+
+---
+## ✅ Kết quả Đối soát Danh mục HĐGSNN & Liêm chính
+- **Trạng thái**: {integrity_data.get('message', 'N/A')}
+- **Phân hạng / Điểm tối đa**: {ranking_info}
+- **Vai trò ứng viên ({candidate_name})**: {"✅ Tác giả chính" if author_role_data.get('is_main_author') else ("✅ Đồng tác giả" if author_role_data.get('is_present') else "❌ Không có tên")}
+"""
+
+        return OCRValidationResponse(
+            ocr_result=ocr_result,
+            has_doi=has_doi,
+            extracted_doi=extracted_doi,
+            crossref_matched=crossref_matched,
+            crossref_metadata=crossref_metadata,
+            double_check_mismatches=double_check_mismatches,
+            integrity=integrity_data,
+            author_role=author_role_data,
+            report_markdown=report_markdown
+        )
+    except Exception as e:
+        traceback.print_exc()
+        raise HTTPException(500, f"Lỗi thẩm định qua ảnh: {str(e)}")
+

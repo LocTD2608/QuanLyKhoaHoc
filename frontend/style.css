@@ -1523,3 +1523,27 @@ tr:hover td {
     border-top-color: rgba(239, 68, 68, 0.4);
     border-bottom-color: rgba(239, 68, 68, 0.4);
 }
+
+/* Print optimization for official declaration sheet */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    aside, header, .toast-container, nav, button, .chat-widget, [class*="Sidebar"], [class*="Header"] {
+        display: none !important;
+    }
+    main {
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: visible !important;
+    }
+    .declaration-sheet {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+}
+

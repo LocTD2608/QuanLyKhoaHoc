@@ -8,6 +8,7 @@ interface PaperFilterBarProps {
   totalCount: number;
   onOpenAddModal: () => void;
   onOpenScholarModal: () => void;
+  onOpenAiDeclaration?: () => void;
 }
 
 export const PaperFilterBar: React.FC<PaperFilterBarProps> = ({
@@ -18,6 +19,7 @@ export const PaperFilterBar: React.FC<PaperFilterBarProps> = ({
   totalCount,
   onOpenAddModal,
   onOpenScholarModal,
+  onOpenAiDeclaration,
 }) => {
   return (
     <div className="search-filter-card" style={{ marginBottom: '1.25rem' }}>
@@ -65,7 +67,7 @@ export const PaperFilterBar: React.FC<PaperFilterBarProps> = ({
         </div>
 
         {/* Right Side: Action Buttons */}
-        <div className="search-filter-right">
+        <div className="search-filter-right" style={{ display: 'flex', alignItems: 'center', gap: '0.625rem', flexWrap: 'wrap' }}>
           <button
             type="button"
             onClick={onOpenScholarModal}
@@ -73,19 +75,20 @@ export const PaperFilterBar: React.FC<PaperFilterBarProps> = ({
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.5rem',
-              height: '40px',
-              padding: '0 1rem',
-              borderRadius: '9px',
-              border: '1px solid #c7d2fe',
-              background: '#eef2ff',
-              color: '#4338ca',
-              fontSize: '0.85rem',
+              height: '38px',
+              padding: '0 0.875rem',
+              borderRadius: '8px',
+              border: '1px solid #e2e8f0',
+              background: '#f8fafc',
+              color: '#475569',
+              fontSize: '0.825rem',
               fontWeight: 600,
               cursor: 'pointer',
               transition: 'all 0.18s ease',
             }}
+            title="Đồng bộ danh sách bài báo từ Google Scholar"
           >
-            <i className="fa-brands fa-google" style={{ color: '#4f46e5' }} /> Đồng bộ Scholar
+            <i className="fa-brands fa-google" style={{ color: '#4f46e5' }} /> Scholar
           </button>
 
           <button
@@ -95,21 +98,47 @@ export const PaperFilterBar: React.FC<PaperFilterBarProps> = ({
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.5rem',
-              height: '40px',
-              padding: '0 1.125rem',
-              borderRadius: '9px',
-              border: 'none',
-              background: 'linear-gradient(135deg, #6366f1, #4f46e5)',
-              color: 'white',
-              fontSize: '0.85rem',
+              height: '38px',
+              padding: '0 0.875rem',
+              borderRadius: '8px',
+              border: '1px solid #cbd5e1',
+              background: 'white',
+              color: '#334155',
+              fontSize: '0.825rem',
               fontWeight: 600,
               cursor: 'pointer',
-              boxShadow: '0 2px 6px rgba(79, 70, 229, 0.25)',
               transition: 'all 0.18s ease',
             }}
+            title="Nhập thông tin bài báo thủ công theo mẫu"
           >
-            <i className="fa-solid fa-plus" /> Thêm bài báo
+            <i className="fa-solid fa-plus" /> Thêm thủ công
           </button>
+
+          {onOpenAiDeclaration && (
+            <button
+              type="button"
+              onClick={onOpenAiDeclaration}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                height: '38px',
+                padding: '0 1.125rem',
+                borderRadius: '8px',
+                border: 'none',
+                background: 'linear-gradient(135deg, #6366f1, #4f46e5)',
+                color: 'white',
+                fontSize: '0.825rem',
+                fontWeight: 600,
+                cursor: 'pointer',
+                boxShadow: '0 2px 8px rgba(79, 70, 229, 0.3)',
+                transition: 'all 0.18s ease',
+              }}
+              title="Quét ảnh trang đầu / Tờ khai Mẫu 08 hoặc nhập DOI để AI tự động thẩm định và tính điểm HĐGSNN"
+            >
+              <i className="fa-solid fa-wand-magic-sparkles" /> Khai báo & Thẩm định AI
+            </button>
+          )}
         </div>
       </div>
     </div>

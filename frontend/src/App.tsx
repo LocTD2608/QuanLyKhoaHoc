@@ -77,6 +77,7 @@ function AppLayout() {
               <Route path="/journal-catalog" element={<JournalCatalog />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/simulator" element={<Simulator setLoading={setLoading} />} />
+              <Route path="/validation" element={<Navigate to="/papers" replace state={{ openAiDeclaration: true }} />} />
               <Route path="/info" element={<UsefulInfo />} />
               <Route path="*" element={<Navigate to="/dashboard" replace />} />
             </Routes>
